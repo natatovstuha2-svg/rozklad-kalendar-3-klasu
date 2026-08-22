@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071d3d">
+<title>Розклад-календар 3 класу 2026–2027</title>
+<style>
+:root{--ink:#0c315b;--gold:#f0c85c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 20% 0,#1f629b 0,transparent 29%),linear-gradient(135deg,#04152f,#0a2e59 55%,#061a36);min-height:100vh}
+button,input,textarea{font:inherit}button{cursor:pointer}
+.shell{width:min(1770px,calc(100% - 28px));margin:auto;padding:18px 0 40px}
+.hero{position:sticky;top:10px;z-index:20;display:grid;grid-template-columns:145px minmax(0,1fr) 330px;align-items:center;min-height:168px;padding:15px 24px;border:1px solid #efd67e;border-radius:32px;background:linear-gradient(118deg,#09254bde,#176da2e8 58%,#0b315de8);box-shadow:0 18px 40px #00112780,inset 0 1px 0 #bce9ff80;backdrop-filter:blur(16px)}
+.logo{position:relative;width:124px;height:124px;display:grid;place-items:center;border-radius:50%;background:#fff;box-shadow:0 10px 24px #00152b90}
+.logo:before{content:"";position:absolute;inset:-7px;border-radius:50%;background:conic-gradient(#fff0a6,#a46600,#fff7c5,#c98d1b,#fff0a6);z-index:-1;animation:spin 24s linear infinite}
+.logo span{font-size:72px;filter:drop-shadow(0 4px 5px #174e8a)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.school{font-weight:950;font-size:clamp(22px,2vw,35px);letter-spacing:.045em;color:#ffda65;text-shadow:0 2px 0 #8b5100,0 4px 8px #00162b}
+.council{font-size:17px;color:#d6eaff;font-weight:700;margin:4px 0 7px}
+h1{margin:0;font-size:clamp(30px,4vw,60px);line-height:1;color:#f5fbff;letter-spacing:-.035em;text-shadow:0 3px 0 #8fd1fb,0 7px 0 #0a3c6e,0 13px 18px #00152d}
+.subtitle{margin-top:10px;color:#d7edff;font-size:clamp(15px,1.35vw,21px)}
+.scene{justify-self:end;display:flex;align-items:end;gap:8px;filter:drop-shadow(0 10px 12px #00152d99)}
+.books{font-size:60px}.laptop{font-size:72px;animation:glow 4s ease-in-out infinite}.plant{font-size:58px}
+@keyframes glow{50%{filter:drop-shadow(0 0 18px #8ee9ff)}}
+main{margin-top:22px;padding:28px;border:1px solid #e7c65c;border-radius:30px;background:linear-gradient(145deg,#fff,#edf7ff);box-shadow:0 18px 45px #00142d42,inset 0 0 0 6px #ffffff80}
+.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.toolbar h2{font-size:clamp(25px,2.5vw,40px);margin:0 auto 0 0}
+.badge{padding:8px 13px;border-radius:99px;background:#e5f4ff;border:1px solid #b7d8ef;font-weight:800}
+.btn{border:1px solid #9fc5e4;border-radius:13px;padding:11px 15px;font-weight:850;color:#0b3760;background:linear-gradient(#fff,#dfefff);box-shadow:0 5px 0 #a8c5dc;transition:.15s}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #a8c5dc}
+.primary{color:#fff;border-color:#1269b5;background:linear-gradient(#2a92e9,#0860b3);box-shadow:0 5px 0 #06457f}
+.gold{border-color:#d2a52a;background:linear-gradient(#fff1a4,#f0bd34);box-shadow:0 5px 0 #9a6808}
+.notice{display:none;margin:-4px 0 18px;padding:13px 16px;border-radius:14px;background:#fff8d9;border:1px solid #e4bd42;color:#674800}
+.editing .notice{display:block}
+.grid{display:grid;grid-template-columns:repeat(5,minmax(205px,1fr));gap:15px}
+.day{min-width:0;border:1px solid #b5d2e9;border-radius:22px;background:linear-gradient(155deg,#fff,#edf6fd);box-shadow:0 10px 0 #b8d2e4,0 18px 28px #0a315128;overflow:hidden}
+.day-head{padding:17px 13px;color:#fff;text-align:center;font-size:22px;font-weight:950;text-shadow:0 2px 2px #001b3b;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.lessons{padding:12px;display:grid;gap:11px}
+.lesson{min-height:118px;padding:12px;border:1px solid #d2e2ef;border-radius:16px;background:linear-gradient(145deg,#fff,#f4f9fd);box-shadow:0 5px 10px #082f5320;transition:.2s}
+.lesson:hover{transform:translateY(-3px);box-shadow:0 10px 18px #082f5335}
+.lesson-no{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:10px;color:#07335e;font-weight:950;background:linear-gradient(#fff2a8,#edb72d);box-shadow:0 3px 7px #8a610640}
+.time{font-size:12px;color:#67809a;margin-left:7px;font-weight:700}
+.subject{font-size:17px;line-height:1.2;font-weight:900;margin:10px 0 4px;overflow-wrap:anywhere}
+.empty .subject{color:#9aafc1;font-weight:700}
+.comment{font-size:13px;line-height:1.3;color:#5d7690;white-space:pre-wrap}
+.material{display:inline-block;margin-top:9px;color:#075da8;font-size:13px;font-weight:900;text-decoration:none}
+.material:hover{text-decoration:underline}
+.edit-fields{display:none;margin-top:10px;gap:7px}
+.editing .edit-fields{display:grid}
+.editing .display-fields{display:none}
+.field{width:100%;border:1px solid #b9d0e3;border-radius:9px;padding:8px 9px;color:#123f68;background:#fff;outline:none}
+.field:focus{border-color:#2589d4;box-shadow:0 0 0 3px #81c9ff45}
+.field.bad{border-color:#d83b3b;background:#fff1f1}
+.hint{font-size:11px;color:#7890a7}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:26px;padding:18px 4px 2px;color:#58748e}
+.toast{position:fixed;right:22px;bottom:22px;z-index:40;max-width:380px;padding:14px 18px;border-radius:15px;color:#fff;background:#07365f;box-shadow:0 15px 35px #00142d70;opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}
+.toast.show{opacity:1;transform:none}
+@media(max-width:1180px){.hero{grid-template-columns:115px 1fr}.scene{display:none}.logo{width:96px;height:96px}.logo span{font-size:56px}.grid{grid-template-columns:repeat(2,minmax(240px,1fr))}}
+@media(max-width:680px){.shell{width:calc(100% - 14px);padding-top:7px}.hero{position:relative;top:0;grid-template-columns:76px 1fr;min-height:auto;padding:14px;border-radius:22px}.logo{width:64px;height:64px}.logo span{font-size:38px}.school{font-size:18px}.council{font-size:12px}h1{font-size:24px}.subtitle{font-size:13px}main{padding:14px;border-radius:22px}.grid{grid-template-columns:1fr}.toolbar .btn{flex:1}.toolbar h2{width:100%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="hero">
+<div class="logo" title="Львівський ліцей"><span>🌐</span></div>
+<div>
+<div class="school">ЛЬВІВСЬКИЙ ЛІЦЕЙ</div>
+<div class="council">Тягинської сільської ради</div>
+<h1>Розклад-календар 3 класу</h1>
+<div class="subtitle">2026–2027 навчальний рік · актуальні уроки та навчальні матеріали</div>
+</div>
+<div class="scene" aria-hidden="true"><span class="books">📚</span><span class="laptop">💻</span><span class="plant">🪴</span></div>
+</header>
+
+<main id="app">
+<div class="toolbar">
+<h2>Тижневий розклад</h2>
+<span class="badge" id="filled">Заповнено: 0 із 25</span>
+<button class="btn" id="editBtn" type="button">✏️ Редагувати</button>
+<button class="btn primary" id="saveBtn" type="button" hidden>💾 Зберегти чернетку</button>
+<button class="btn gold" id="exportBtn" type="button" hidden>⬇ Підготувати для GitHub</button>
+</div>
+
+<div class="notice"><b>Режим редагування.</b> Заповніть урок, примітку та за потреби посилання, яке починається з <b>https://</b>. Чернетка зберігається лише на цьому комп’ютері.</div>
+
+<section class="grid" id="schedule"></section>
+
+<div class="foot">
+<div><b>Безпека:</b> приймаються лише HTTPS-посилання. Паролів і ключів у коді немає.</div>
+<button class="btn" id="copyBtn" type="button">🔗 Скопіювати адресу</button>
+</div>
+</main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const INITIAL_DATA=/*__SCHEDULE_START__*/{"days":[{"name":"Понеділок","color":["#ff9f31","#ef5f55"]},{"name":"Вівторок","color":["#9b62ed","#6043c7"]},{"name":"Середа","color":["#1ab9ba","#087d99"]},{"name":"Четвер","color":["#3cbf72","#178d52"]},{"name":"П’ятниця","color":["#318eea","#1659bd"]}],"times":["16:00–16:30","16:40–17:10","17:20–17:50","18:00–18:30","18:40–19:10"],"items":[[{},{},{},{},{}],[{},{},{},{},{}],[{},{},{},{},{}],[{},{},{},{},{}],[{},{},{},{},{}]]}/*__SCHEDULE_END__*/;
+
+const KEY="rozklad_3_2026_2027_draft";
+let editing=false;
+let data=load()||JSON.parse(JSON.stringify(INITIAL_DATA));
+const $=s=>document.querySelector(s);
+
+data.items.forEach(day=>day.forEach(item=>{
+item.subject=item.subject||"";
+item.comment=item.comment||"";
+item.url=item.url||"";
+}));
+
+function load(){
+try{
+const value=localStorage.getItem(KEY);
+return value?JSON.parse(value):null;
+}catch{return null}
+}
+
+function safeUrl(value){
+const text=(value||"").trim();
+if(!text)return "";
+try{
+const url=new URL(text);
+return url.protocol==="https:"?url.href:"";
+}catch{return ""}
+}
+
+function make(tag,className,text){
+const node=document.createElement(tag);
+if(className)node.className=className;
+if(text!==undefined)node.textContent=text;
+return node;
+}
+
+function render(){
+const root=$("#schedule");
+root.replaceChildren();
+
+data.days.forEach((day,dayIndex)=>{
+const card=make("article","day");
+card.style.setProperty("--c1",day.color[0]);
+card.style.setProperty("--c2",day.color[1]);
+
+card.append(make("header","day-head",day.name));
+const lessons=make("div","lessons");
+
+data.items[dayIndex].forEach((item,lessonIndex)=>{
+const lesson=make("div","lesson"+(item.subject.trim()?"":" empty"));
+const top=make("div");
+
+top.append(
+make("span","lesson-no",String(lessonIndex+1)),
+make("span","time",data.times[lessonIndex])
+);
+
+lesson.append(top);
+
+const display=make("div","display-fields");
+display.append(make("div","subject",item.subject.trim()||"Урок не заповнено"));
+
+if(item.comment.trim()){
+display.append(make("div","comment",item.comment));
+}
+
+const href=safeUrl(item.url);
+
+if(href){
+const link=make("a","material","Відкрити матеріал ↗");
+link.href=href;
+link.target="_blank";
+link.rel="noopener noreferrer";
+display.append(link);
+}
+
+lesson.append(display);
+
+const fields=make("div","edit-fields");
+
+const subject=document.createElement("input");
+subject.className="field";
+subject.placeholder="Назва уроку";
+subject.value=item.subject;
+
+const comment=document.createElement("textarea");
+comment.className="field";
+comment.rows=2;
+comment.placeholder="Примітка";
+comment.value=item.comment;
+
+const url=document.createElement("input");
+url.className="field";
+url.type="url";
+url.placeholder="https://…";
+url.value=item.url;
+
+subject.addEventListener("input",()=>{
+item.subject=subject.value;
+updateCount();
+});
+
+comment.addEventListener("input",()=>{
+item.comment=comment.value;
+});
+
+url.addEventListener("input",()=>{
+item.url=url.value;
+url.classList.toggle("bad",Boolean(url.value.trim()&&!safeUrl(url.value)));
+});
+
+fields.append(subject,comment,url,make("div","hint","Лише безпечне посилання https://"));
+lesson.append(fields);
+lessons.append(lesson);
+});
+
+card.append(lessons);
+root.append(card);
+});
+
+updateCount();
+}
+
+function updateCount(){
+const count=data.items.flat().filter(item=>item.subject.trim()).length;
+$("#filled").textContent=`Заповнено: ${count} із 25`;
+}
+
+function toggleEdit(){
+editing=!editing;
+$("#app").classList.toggle("editing",editing);
+$("#editBtn").textContent=editing?"✕ Завершити редагування":"✏️ Редагувати";
+$("#saveBtn").hidden=!editing;
+$("#exportBtn").hidden=!editing;
+if(!editing)render();
+}
+
+function message(text){
+const toast=$("#toast");
+toast.textContent=text;
+toast.classList.add("show");
+clearTimeout(message.timer);
+message.timer=setTimeout(()=>toast.classList.remove("show"),3200);
+}
+
+function save(){
+const invalid=data.items.flat().some(item=>item.url.trim()&&!safeUrl(item.url));
+
+if(invalid){
+message("Посилання має починатися з https://");
+return false;
+}
+
+localStorage.setItem(KEY,JSON.stringify(data));
+message("Чернетку збережено на цьому комп’ютері");
+return true;
+}
+
+function exportHtml(){
+if(!save())return;
+
+const clone=document.documentElement.cloneNode(true);
+clone.querySelector("#app").classList.remove("editing");
+clone.querySelector("#saveBtn").hidden=true;
+clone.querySelector("#exportBtn").hidden=true;
+clone.querySelector("#editBtn").textContent="✏️ Редагувати";
+
+let html="<!doctype html>\n"+clone.outerHTML;
+const json=JSON.stringify(data).replace(/</g,"\\u003c");
+
+html=html.replace(
+/\/\*__SCHEDULE_START__\*\/[\s\S]*?\/\*__SCHEDULE_END__\*\//,
+`/*__SCHEDULE_START__*/${json}/*__SCHEDULE_END__*/`
+);
+
+const blob=new Blob([html],{type:"text/html;charset=utf-8"});
+const link=document.createElement("a");
+link.href=URL.createObjectURL(blob);
+link.download="index.html";
+link.click();
+
+setTimeout(()=>URL.revokeObjectURL(link.href),1500);
+message("Оновлений index.html підготовлено");
+}
+
+$("#editBtn").addEventListener("click",toggleEdit);
+$("#saveBtn").addEventListener("click",save);
+$("#exportBtn").addEventListener("click",exportHtml);
+
+$("#copyBtn").addEventListener("click",async()=>{
+try{
+await navigator.clipboard.writeText(location.href);
+message("Адресу розкладу скопійовано");
+}catch{
+message("Скопіюйте адресу з рядка браузера");
+}
+});
+
+render();
+</script>
+</body>
+</html>
