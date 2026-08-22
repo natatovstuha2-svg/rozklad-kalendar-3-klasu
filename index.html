@@ -3,301 +3,277 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#071d3d">
+<meta name="theme-color" content="#061a3b">
 <title>Розклад-календар 3 класу 2026–2027</title>
 <style>
-:root{--ink:#0c315b;--gold:#f0c85c}
+:root{--navy:#061a3b;--ink:#102950;--gold:#ffd95a}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 20% 0,#1f629b 0,transparent 29%),linear-gradient(135deg,#04152f,#0a2e59 55%,#061a36);min-height:100vh}
-button,input,textarea{font:inherit}button{cursor:pointer}
-.shell{width:min(1770px,calc(100% - 28px));margin:auto;padding:18px 0 40px}
-.hero{position:sticky;top:10px;z-index:20;display:grid;grid-template-columns:145px minmax(0,1fr) 330px;align-items:center;min-height:168px;padding:15px 24px;border:1px solid #efd67e;border-radius:32px;background:linear-gradient(118deg,#09254bde,#176da2e8 58%,#0b315de8);box-shadow:0 18px 40px #00112780,inset 0 1px 0 #bce9ff80;backdrop-filter:blur(16px)}
-.logo{position:relative;width:124px;height:124px;display:grid;place-items:center;border-radius:50%;background:#fff;box-shadow:0 10px 24px #00152b90}
-.logo:before{content:"";position:absolute;inset:-7px;border-radius:50%;background:conic-gradient(#fff0a6,#a46600,#fff7c5,#c98d1b,#fff0a6);z-index:-1;animation:spin 24s linear infinite}
-.logo span{font-size:72px;filter:drop-shadow(0 4px 5px #174e8a)}
-@keyframes spin{to{transform:rotate(360deg)}}
-.school{font-weight:950;font-size:clamp(22px,2vw,35px);letter-spacing:.045em;color:#ffda65;text-shadow:0 2px 0 #8b5100,0 4px 8px #00162b}
-.council{font-size:17px;color:#d6eaff;font-weight:700;margin:4px 0 7px}
-h1{margin:0;font-size:clamp(30px,4vw,60px);line-height:1;color:#f5fbff;letter-spacing:-.035em;text-shadow:0 3px 0 #8fd1fb,0 7px 0 #0a3c6e,0 13px 18px #00152d}
-.subtitle{margin-top:10px;color:#d7edff;font-size:clamp(15px,1.35vw,21px)}
-.scene{justify-self:end;display:flex;align-items:end;gap:8px;filter:drop-shadow(0 10px 12px #00152d99)}
-.books{font-size:60px}.laptop{font-size:72px;animation:glow 4s ease-in-out infinite}.plant{font-size:58px}
-@keyframes glow{50%{filter:drop-shadow(0 0 18px #8ee9ff)}}
-main{margin-top:22px;padding:28px;border:1px solid #e7c65c;border-radius:30px;background:linear-gradient(145deg,#fff,#edf7ff);box-shadow:0 18px 45px #00142d42,inset 0 0 0 6px #ffffff80}
-.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
-.toolbar h2{font-size:clamp(25px,2.5vw,40px);margin:0 auto 0 0}
-.badge{padding:8px 13px;border-radius:99px;background:#e5f4ff;border:1px solid #b7d8ef;font-weight:800}
-.btn{border:1px solid #9fc5e4;border-radius:13px;padding:11px 15px;font-weight:850;color:#0b3760;background:linear-gradient(#fff,#dfefff);box-shadow:0 5px 0 #a8c5dc;transition:.15s}
-.btn:hover{transform:translateY(-1px)}
-.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #a8c5dc}
-.primary{color:#fff;border-color:#1269b5;background:linear-gradient(#2a92e9,#0860b3);box-shadow:0 5px 0 #06457f}
-.gold{border-color:#d2a52a;background:linear-gradient(#fff1a4,#f0bd34);box-shadow:0 5px 0 #9a6808}
-.notice{display:none;margin:-4px 0 18px;padding:13px 16px;border-radius:14px;background:#fff8d9;border:1px solid #e4bd42;color:#674800}
-.editing .notice{display:block}
-.grid{display:grid;grid-template-columns:repeat(5,minmax(205px,1fr));gap:15px}
-.day{min-width:0;border:1px solid #b5d2e9;border-radius:22px;background:linear-gradient(155deg,#fff,#edf6fd);box-shadow:0 10px 0 #b8d2e4,0 18px 28px #0a315128;overflow:hidden}
-.day-head{padding:17px 13px;color:#fff;text-align:center;font-size:22px;font-weight:950;text-shadow:0 2px 2px #001b3b;background:linear-gradient(135deg,var(--c1),var(--c2))}
-.lessons{padding:12px;display:grid;gap:11px}
-.lesson{min-height:118px;padding:12px;border:1px solid #d2e2ef;border-radius:16px;background:linear-gradient(145deg,#fff,#f4f9fd);box-shadow:0 5px 10px #082f5320;transition:.2s}
-.lesson:hover{transform:translateY(-3px);box-shadow:0 10px 18px #082f5335}
-.lesson-no{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:10px;color:#07335e;font-weight:950;background:linear-gradient(#fff2a8,#edb72d);box-shadow:0 3px 7px #8a610640}
-.time{font-size:12px;color:#67809a;margin-left:7px;font-weight:700}
-.subject{font-size:17px;line-height:1.2;font-weight:900;margin:10px 0 4px;overflow-wrap:anywhere}
-.empty .subject{color:#9aafc1;font-weight:700}
-.comment{font-size:13px;line-height:1.3;color:#5d7690;white-space:pre-wrap}
-.material{display:inline-block;margin-top:9px;color:#075da8;font-size:13px;font-weight:900;text-decoration:none}
-.material:hover{text-decoration:underline}
-.edit-fields{display:none;margin-top:10px;gap:7px}
-.editing .edit-fields{display:grid}
-.editing .display-fields{display:none}
-.field{width:100%;border:1px solid #b9d0e3;border-radius:9px;padding:8px 9px;color:#123f68;background:#fff;outline:none}
-.field:focus{border-color:#2589d4;box-shadow:0 0 0 3px #81c9ff45}
-.field.bad{border-color:#d83b3b;background:#fff1f1}
-.hint{font-size:11px;color:#7890a7}
-.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:26px;padding:18px 4px 2px;color:#58748e}
-.toast{position:fixed;right:22px;bottom:22px;z-index:40;max-width:380px;padding:14px 18px;border-radius:15px;color:#fff;background:#07365f;box-shadow:0 15px 35px #00142d70;opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}
+html{background:var(--navy);scroll-behavior:smooth}
+body{margin:0;min-width:320px;color:#fff;font-family:Inter,ui-rounded,"Segoe UI",Arial,sans-serif;background:var(--navy)}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+.page{position:relative;min-height:100vh;overflow:hidden;background:radial-gradient(circle at 8% 5%,#26aeff33,transparent 27rem),radial-gradient(circle at 90% 15%,#8253ff2b,transparent 25rem),linear-gradient(155deg,#061a3b,#09244d 47%,#071a39)}
+.page:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.2;background-image:radial-gradient(#fff .75px,transparent .75px);background-size:34px 34px;mask-image:linear-gradient(#000,transparent 68%)}
+.shell{position:relative;z-index:1;width:min(1460px,calc(100% - 34px));margin:auto;padding:26px 0 30px}
+.header-layout{display:grid;grid-template-columns:minmax(0,1fr) 520px;gap:25px}
+.topbar{position:relative;display:grid;grid-template-columns:175px minmax(0,1fr);align-items:center;gap:18px;min-height:272px;padding:20px;overflow:hidden;border:1px solid #90d2ff31;border-radius:30px;background:radial-gradient(circle at 8% 42%,#34c6ff2b,transparent 27%),linear-gradient(135deg,#174a8075,#071d4129);box-shadow:inset 0 1px 0 #ffffff1a,0 20px 42px #00091f2e}
+.logo{position:relative;z-index:2;width:165px;height:165px;padding:7px;border:4px solid var(--gold);border-radius:50%;background:#fff;box-shadow:0 7px 0 #a96c00,0 15px 27px #00081f57,0 0 0 6px #ffd85224}
+.logo:before{content:"";position:absolute;inset:-10px;border-radius:50%;border:3px solid transparent;border-top-color:#fff4a1;border-right-color:#b87400;animation:ring 28s linear infinite}
+.logo img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+@keyframes ring{to{transform:rotate(360deg)}}
+.brand{position:relative;z-index:2}
+.brand>p{margin:4px 0 7px;color:#7fd8ff;font-size:12px;font-weight:850;letter-spacing:.14em;text-transform:uppercase}
+.titleline{display:flex;align-items:center;flex-wrap:wrap;gap:20px}
+.brand h1{margin:0;font-size:clamp(44px,5vw,72px);font-weight:950;line-height:.94;letter-spacing:-.055em;color:#dff5ff;text-shadow:0 1px 0 #eaf7ff,0 2px 0 #bdd5e6,0 3px 0 #8eafc7,0 5px 0 #294f76,0 10px 18px #00081f6b}
+.brand h1 span{color:#fff}
+.badge3{display:flex;align-items:center;gap:8px;padding:9px 15px 9px 10px;border:1px solid #ffffff42;border-radius:18px;background:#ffffff1a}
+.badge3 b{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;color:#11234d;font-size:29px;background:linear-gradient(145deg,#ffe971,#ffb518);box-shadow:0 5px 0 #bc7200}
+.badge3 strong{font-size:13px;letter-spacing:.12em}
+.brand h2{margin:21px 0 14px;color:#cfe8ff;font-size:clamp(17px,1.55vw,23px)}
+.pills{display:flex;gap:9px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;min-height:35px;padding:8px 13px;border:1px solid #ffffff29;border-radius:999px;font-size:11px;font-weight:850;background:#0518357a}
+.pill.gold{color:#092950;background:linear-gradient(145deg,#ffe971,#ffbd25);box-shadow:0 4px 0 #a96800}
+.season{position:absolute;z-index:1;inset:0;overflow:hidden;pointer-events:none}
+.season i{position:absolute;top:-55px;left:var(--x);font-style:normal;font-size:var(--s);opacity:0;filter:drop-shadow(0 4px 5px #00152d80);animation:fall var(--d) linear var(--delay) infinite}
+.season.spring i{top:var(--y);animation:bloom 7s ease-in-out var(--delay) infinite}
+.season.summer i{top:var(--y);font-size:18px;animation:glimmer 4.8s ease-in-out var(--delay) infinite}
+.season i:nth-child(1){--x:5%;--s:35px;--d:14s;--delay:-2s;--y:18%}
+.season i:nth-child(2){--x:16%;--s:27px;--d:16s;--delay:-8s;--y:62%}
+.season i:nth-child(3){--x:29%;--s:42px;--d:15s;--delay:-5s;--y:31%}
+.season i:nth-child(4){--x:45%;--s:29px;--d:17s;--delay:-11s;--y:72%}
+.season i:nth-child(5){--x:59%;--s:38px;--d:14s;--delay:-4s;--y:21%}
+.season i:nth-child(6){--x:72%;--s:26px;--d:16s;--delay:-10s;--y:55%}
+.season i:nth-child(7){--x:82%;--s:34px;--d:15s;--delay:-6s;--y:12%}
+.season i:nth-child(8){--x:91%;--s:28px;--d:18s;--delay:-13s;--y:69%}
+.season i:nth-child(9){--x:53%;--s:23px;--d:19s;--delay:-15s;--y:42%}
+.season i:nth-child(10){--x:9%;--s:32px;--d:15s;--delay:-12s;--y:39%}
+.season i:nth-child(11){--x:23%;--s:25px;--d:18s;--delay:-17s;--y:79%}
+.season i:nth-child(12){--x:38%;--s:37px;--d:16s;--delay:-7s;--y:9%}
+@keyframes fall{0%{opacity:0;transform:translate3d(0,-35px,0) rotate(0)}12%{opacity:.95}100%{opacity:0;transform:translate3d(110px,340px,0) rotate(460deg)}}
+@keyframes bloom{0%,100%{opacity:.08;transform:scale(.5)}50%{opacity:.96;transform:scale(1.12)}}
+@keyframes glimmer{0%,100%{opacity:.1}50%{opacity:1;filter:drop-shadow(0 0 14px #ffe16a)}}
+.calendar{padding:16px 20px;border:1px solid #ffffffc7;border-radius:28px;color:#102950;background:linear-gradient(145deg,#fff,#f1f8ff);box-shadow:0 10px 0 #b9d3eb,0 24px 45px #00082052}
+.cal-top{display:grid;grid-template-columns:38px 1fr 38px;align-items:center;gap:8px;margin-bottom:9px;text-align:center}
+.cal-top strong{display:block;font-size:22px}.cal-top small{color:#6682a7;font-weight:850}
+.arrow{width:38px;height:38px;border:0;border-radius:11px;color:#15345e;font-size:26px;background:#e8f2fc;box-shadow:0 3px 0 #c2d5e8}
+.arrow:disabled{opacity:.28}
+.week,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.week{margin-bottom:5px;color:#7890ad;text-align:center;font-size:10px;font-weight:900}
+.days>span,.date{height:31px}
+.date{position:relative;border:0;border-radius:9px;color:#1b3559;font-size:12px;font-weight:800;background:transparent}
+.date:hover{background:#e6f3ff}.date.weekend{color:#e34b75}
+.date.selected{color:#fff;background:linear-gradient(145deg,#2dd8f4,#1585dd);box-shadow:0 3px 0 #0c61a9}
+.dots{position:absolute;left:50%;bottom:1px;display:flex;gap:2px;transform:translateX(-50%)}
+.dot{display:inline-block;width:7px;height:7px;border:1px solid #fff;border-radius:50%}
+.birthday{background:#ef5dc7}.holiday{background:#ffc928}.class-event{background:#20d7a3}
+.months{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;margin-top:9px;padding-top:9px;border-top:1px solid #dce7f2}
+.months button{padding:6px 2px;border:0;border-radius:8px;color:#6b829f;font-size:10px;font-weight:900;background:#edf4fa}
+.months button.active{color:#0d2b56;background:linear-gradient(145deg,#ffe86a,#ffc731);box-shadow:0 2px 0 #d09d0a}
+.legend{display:flex;justify-content:center;flex-wrap:wrap;gap:7px 14px;margin-top:10px;color:#69819f;font-size:9px;font-weight:850}
+.legend span{display:flex;align-items:center;gap:4px}
+.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:17px 0 10px}
+.toolbar h3{margin:0 auto 0 0;font-size:20px}
+.btn{padding:11px 15px;border:1px solid #ffffff32;border-radius:13px;color:#dcecff;font-weight:900;background:linear-gradient(145deg,#173d70,#0c2c5b);box-shadow:0 5px 0 #041a3c}
+.btn.gold{color:#102950;background:linear-gradient(145deg,#ffe971,#ffbd25);box-shadow:0 5px 0 #a96800}
+.btn.blue{color:#fff;background:linear-gradient(#2a92e9,#0860b3);box-shadow:0 5px 0 #06457f}
+.edit-note{display:none;width:100%;padding:12px 15px;border-radius:13px;color:#674800;background:#fff8d9;border:1px solid #e4bd42}
+.editing .edit-note{display:block}
+.panel{padding:16px;border:1px solid #b5daff38;border-radius:30px;background:linear-gradient(145deg,#173d6cab,#061b3de0);box-shadow:0 30px 65px #0006196b}
+.scroll{overflow-x:auto;padding:3px 3px 14px}
+.grid{min-width:1180px;display:grid;grid-template-columns:142px repeat(5,minmax(185px,1fr));gap:11px}
+.time-head,.day-head{height:69px;border-radius:19px}
+.time-head{display:flex;align-items:center;justify-content:center;color:#dcecff;font-weight:900;background:linear-gradient(145deg,#173d70,#0c2c5b);box-shadow:0 7px 0 #041a3c}
+.day-head{display:flex;align-items:center;justify-content:center;gap:9px;color:#061935;font-weight:950;box-shadow:0 8px 0 var(--shadow),0 15px 24px #0000002e}
+.day-head b{display:grid;place-items:center;width:36px;height:36px;border-radius:11px;background:#ffffff52}
+.cyan{--shadow:#008aaa;background:linear-gradient(145deg,#65f5ff,#18c8e7)}
+.green{--shadow:#07966e;background:linear-gradient(145deg,#72f5bd,#21d99a)}
+.yellow{--shadow:#c69600;background:linear-gradient(145deg,#fff274,#ffc928)}
+.orange{--shadow:#c66c00;background:linear-gradient(145deg,#ffbc64,#ff842d)}
+.pink{--shadow:#bd317d;background:linear-gradient(145deg,#ff89cf,#ef4fa9)}
+.time-cell{display:flex;align-items:center;gap:9px;min-height:91px;padding:12px;border-radius:18px;background:linear-gradient(145deg,#163967,#0a2852);box-shadow:0 6px 0 #03152f}
+.num{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;color:#102950;font-size:20px;font-weight:950;background:linear-gradient(145deg,#ffe971,#ffbd25);box-shadow:0 4px 0 #a96800}
+.time{color:#c8def6;font-size:12px;font-weight:850}
+.slot{position:relative;min-height:91px;padding:11px 12px 11px 17px;border:1px solid #d8e8f5;border-radius:18px;color:#15345d;background:linear-gradient(145deg,#fff,#edf6fd);box-shadow:0 7px 0 #abc9e0;transition:.18s}
+.slot:hover{transform:translateY(-3px)}
+.accent{position:absolute;left:6px;top:13px;bottom:13px;width:5px;border-radius:5px;background:var(--accent)}
+.slot.c1{--accent:#18c8e7}.slot.c2{--accent:#21d99a}.slot.c3{--accent:#ffc928}.slot.c4{--accent:#ff842d}.slot.c5{--accent:#ef4fa9}
+.view strong{display:block;font-size:15px}.view strong.empty{color:#9aafc1}
+.view small{display:block;margin-top:5px;color:#6a83a0}
+.view a{display:inline-block;margin-top:7px;color:#0871ba;font-size:11px;font-weight:900;text-decoration:none}
+.fields{display:none;gap:5px}.editing .fields{display:grid}.editing .view{display:none}
+.field{width:100%;padding:7px 8px;border:1px solid #c8dbea;border-radius:9px;color:#15345d;background:#fff}
+.field.bad{border-color:#d84363;background:#fff1f5}
+.status{display:flex;align-items:center;justify-content:space-between;gap:13px;flex-wrap:wrap;margin-top:13px;padding:13px;color:#b9d5f3;font-size:12px}
+.status span{display:flex;align-items:center;gap:8px}.status i{width:9px;height:9px;border-radius:50%;background:#47ecbb;box-shadow:0 0 18px #47ecbb}
+.backdrop{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:#020d23b8;backdrop-filter:blur(8px)}
+.dialog{width:min(100%,480px);max-height:calc(100vh - 40px);overflow:auto;padding:22px;border-radius:24px;color:#102950;background:linear-gradient(145deg,#fff,#eef7ff);box-shadow:0 14px 0 #a9c9e6,0 32px 80px #0005197a}
+.dialog-head{display:flex;justify-content:space-between;gap:20px;padding-bottom:13px;border-bottom:1px solid #d9e7f3}
+.dialog h3{margin:3px 0 0}.close{width:34px;height:34px;border:0;border-radius:11px;font-size:24px;background:#e1eef9}
+.event-list{display:grid;gap:9px;margin:15px 0}
+.event{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:10px;padding:11px;border:1px solid #dce9f4;border-radius:14px;background:#ffffffb8}
+.event strong,.event small{display:block}.event small{color:#7187a2;font-size:9px;text-transform:uppercase}
+.remove{width:30px;height:30px;border:0;border-radius:9px;color:#d34269;font-size:20px;background:#fff0f4}
+.event-form{display:none;gap:10px;padding-top:15px;border-top:1px solid #d9e7f3}.editing .event-form{display:grid}
+.event-form label{color:#607997;font-size:10px;font-weight:900}
+.event-form input,.event-form select{display:block;width:100%;margin-top:5px;padding:10px;border:1px solid #c9dbea;border-radius:10px}
+.event-form button{padding:11px;border:0;border-radius:11px;font-weight:900;background:linear-gradient(145deg,#ffe971,#ffbd25)}
+.toast{position:fixed;right:22px;bottom:22px;z-index:140;padding:14px 18px;border-radius:15px;color:#fff;background:#07365f;opacity:0;transform:translateY(20px);transition:.25s}
 .toast.show{opacity:1;transform:none}
-@media(max-width:1180px){.hero{grid-template-columns:115px 1fr}.scene{display:none}.logo{width:96px;height:96px}.logo span{font-size:56px}.grid{grid-template-columns:repeat(2,minmax(240px,1fr))}}
-@media(max-width:680px){.shell{width:calc(100% - 14px);padding-top:7px}.hero{position:relative;top:0;grid-template-columns:76px 1fr;min-height:auto;padding:14px;border-radius:22px}.logo{width:64px;height:64px}.logo span{font-size:38px}.school{font-size:18px}.council{font-size:12px}h1{font-size:24px}.subtitle{font-size:13px}main{padding:14px;border-radius:22px}.grid{grid-template-columns:1fr}.toolbar .btn{flex:1}.toolbar h2{width:100%}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+footer{text-align:center;padding:22px 0 5px;color:#91acd0;font-size:12px}
+@media(max-width:1120px){.header-layout{grid-template-columns:1fr}.calendar{width:min(100%,680px);justify-self:center}}
+@media(max-width:690px){.shell{width:calc(100% - 14px)}.topbar{grid-template-columns:76px 1fr;min-height:180px;padding:14px}.logo{width:68px;height:68px;border-width:2px}.brand h1{font-size:31px}.brand h2{font-size:13px}.badge3{display:none}.months{grid-template-columns:repeat(4,1fr)}.panel{padding:10px}.season i:nth-child(n+9){display:none}}
 </style>
 </head>
 <body>
-<div class="shell">
-<header class="hero">
-<div class="logo" title="Львівський ліцей"><span>🌐</span></div>
-<div>
-<div class="school">ЛЬВІВСЬКИЙ ЛІЦЕЙ</div>
-<div class="council">Тягинської сільської ради</div>
-<h1>Розклад-календар 3 класу</h1>
-<div class="subtitle">2026–2027 навчальний рік · актуальні уроки та навчальні матеріали</div>
+<main class="page">
+<div class="shell" id="app">
+<section class="header-layout">
+<header class="topbar">
+<div class="season autumn" id="season"></div>
+<div class="logo"><img src="https://raw.githubusercontent.com/natatovstuha2-svg/biblioteka-robochykh-materialiv/main/logo.png" alt="Логотип Львівського ліцею"></div>
+<div class="brand">
+<p>2026–2027 навчальний рік</p>
+<div class="titleline"><h1><span>Розклад</span> уроків</h1><div class="badge3"><b>3</b><strong>КЛАС</strong></div></div>
+<h2>Плануємо, навчаємося, встигаємо!</h2>
+<div class="pills"><span class="pill">● Львівський ліцей</span><span class="pill gold" id="modeLabel">Лише перегляд</span></div>
 </div>
-<div class="scene" aria-hidden="true"><span class="books">📚</span><span class="laptop">💻</span><span class="plant">🪴</span></div>
 </header>
-
-<main id="app">
+<aside class="calendar">
+<div class="cal-top"><button class="arrow" id="prevMonth">‹</button><div><strong id="monthName"></strong><small id="monthYear"></small></div><button class="arrow" id="nextMonth">›</button></div>
+<div class="week"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Нд</span></div>
+<div class="days" id="calendarDays"></div>
+<div class="months" id="months"></div>
+<div class="legend"><span><i class="dot birthday"></i>Іменинник</span><span><i class="dot holiday"></i>Державне свято</span><span><i class="dot class-event"></i>Подія класу</span></div>
+</aside>
+</section>
 <div class="toolbar">
-<h2>Тижневий розклад</h2>
-<span class="badge" id="filled">Заповнено: 0 із 25</span>
-<button class="btn" id="editBtn" type="button">✏️ Редагувати</button>
-<button class="btn primary" id="saveBtn" type="button" hidden>💾 Зберегти чернетку</button>
-<button class="btn gold" id="exportBtn" type="button" hidden>⬇ Підготувати для GitHub</button>
+<h3>Тижневий розклад</h3>
+<button class="btn" id="editBtn">✏️ Редагувати</button>
+<button class="btn blue" id="saveBtn" hidden>💾 Зберегти чернетку</button>
+<button class="btn gold" id="exportBtn" hidden>⬇ Підготувати для GitHub</button>
+<div class="edit-note"><b>Режим учителя.</b> Заповнюйте уроки, примітки, HTTPS-посилання та важливі дати.</div>
 </div>
-
-<div class="notice"><b>Режим редагування.</b> Заповніть урок, примітку та за потреби посилання, яке починається з <b>https://</b>. Чернетка зберігається лише на цьому комп’ютері.</div>
-
-<section class="grid" id="schedule"></section>
-
-<div class="foot">
-<div><b>Безпека:</b> приймаються лише HTTPS-посилання. Паролів і ключів у коді немає.</div>
-<button class="btn" id="copyBtn" type="button">🔗 Скопіювати адресу</button>
+<section class="panel">
+<div class="scroll"><div class="grid" id="scheduleGrid"></div></div>
+<div class="status"><span><i></i><b id="statusText">Актуальний розклад 3 класу</b></span><button class="btn" id="copyBtn">🔗 Скопіювати адресу</button></div>
+</section>
+<footer>Навчаємося разом — крок за кроком до нових відкриттів</footer>
 </div>
 </main>
-</div>
-
-<div class="toast" id="toast"></div>
-
+<div id="modal"></div><div class="toast" id="toast"></div>
 <script>
-const INITIAL_DATA=/*__SCHEDULE_START__*/{"days":[{"name":"Понеділок","color":["#ff9f31","#ef5f55"]},{"name":"Вівторок","color":["#9b62ed","#6043c7"]},{"name":"Середа","color":["#1ab9ba","#087d99"]},{"name":"Четвер","color":["#3cbf72","#178d52"]},{"name":"П’ятниця","color":["#318eea","#1659bd"]}],"times":["16:00–16:30","16:40–17:10","17:20–17:50","18:00–18:30","18:40–19:10"],"items":[[{},{},{},{},{}],[{},{},{},{},{}],[{},{},{},{},{}],[{},{},{},{},{}],[{},{},{},{},{}]]}/*__SCHEDULE_END__*/;
-
-const KEY="rozklad_3_2026_2027_draft";
-let editing=false;
+const INITIAL_DATA=/*__DATA_START__*/{"values":{},"events":[]}/*__DATA_END__*/;
+const DAYS=[{name:"Понеділок",short:"Пн",tone:"cyan"},{name:"Вівторок",short:"Вт",tone:"green"},{name:"Середа",short:"Ср",tone:"yellow"},{name:"Четвер",short:"Чт",tone:"orange"},{name:"П’ятниця",short:"Пт",tone:"pink"}];
+const TIMES=["16.00–16.30","16.40–17.10","17.20–17.50","18.00–18.30","18.40–19.10"];
+const MONTHS=[["Вересень","Вер",2026,8],["Жовтень","Жов",2026,9],["Листопад","Лис",2026,10],["Грудень","Гру",2026,11],["Січень","Січ",2027,0],["Лютий","Лют",2027,1],["Березень","Бер",2027,2],["Квітень","Кві",2027,3],["Травень","Тра",2027,4],["Червень","Чер",2027,5],["Липень","Лип",2027,6],["Серпень","Сер",2027,7]];
+const TYPES={birthday:"Іменинник у класі",holiday:"Державне свято","class-event":"Подія класу"};
+const KEY="schedule-3-class-full-draft";
+let editing=false,activeMonth=0,selectedDay=1;
 let data=load()||JSON.parse(JSON.stringify(INITIAL_DATA));
+data.values=data.values||{};data.events=data.events||[];
 const $=s=>document.querySelector(s);
-
-data.items.forEach(day=>day.forEach(item=>{
-item.subject=item.subject||"";
-item.comment=item.comment||"";
-item.url=item.url||"";
-}));
-
-function load(){
-try{
-const value=localStorage.getItem(KEY);
-return value?JSON.parse(value):null;
-}catch{return null}
+function load(){try{let v=localStorage.getItem(KEY);return v?JSON.parse(v):null}catch{return null}}
+function node(tag,cls,text){let n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n}
+function safeUrl(v){v=(v||"").trim();if(!v)return"";try{let u=new URL(v);return u.protocol==="https:"?u.href:""}catch{return""}}
+function dateKey(y,m,d){return`${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`}
+function particles(){
+let month=MONTHS[activeMonth][3];
+let season=[8,9,10].includes(month)?"autumn":[11,0,1].includes(month)?"winter":[2,3,4].includes(month)?"spring":"summer";
+let icon=season==="autumn"?"🍁":season==="winter"?"❄":season==="spring"?"✿":"✦";
+let box=$("#season");box.className="season "+season;box.replaceChildren(...Array.from({length:12},()=>node("i","",icon)));
 }
-
-function safeUrl(value){
-const text=(value||"").trim();
-if(!text)return "";
-try{
-const url=new URL(text);
-return url.protocol==="https:"?url.href:"";
-}catch{return ""}
+function renderCalendar(){
+let [name,short,y,m]=MONTHS[activeMonth];
+$("#monthName").textContent=name;$("#monthYear").textContent=y;
+$("#prevMonth").disabled=activeMonth===0;$("#nextMonth").disabled=activeMonth===MONTHS.length-1;
+let root=$("#calendarDays");root.replaceChildren();
+let first=(new Date(y,m,1).getDay()+6)%7,count=new Date(y,m+1,0).getDate();
+for(let i=0;i<first;i++)root.append(node("span"));
+for(let d=1;d<=count;d++){
+let key=dateKey(y,m,d),events=data.events.filter(e=>e.date===key);
+let button=node("button","date"+(d===selectedDay?" selected":"")+(((first+d-1)%7)>4?" weekend":""),String(d));
+if(events.length){let dots=node("span","dots");events.slice(0,3).forEach(e=>dots.append(node("i","dot "+e.type)));button.append(dots)}
+button.onclick=()=>{selectedDay=d;renderCalendar();openDate()};
+root.append(button);
 }
-
-function make(tag,className,text){
-const node=document.createElement(tag);
-if(className)node.className=className;
-if(text!==undefined)node.textContent=text;
-return node;
+let months=$("#months");months.replaceChildren();
+MONTHS.forEach((month,index)=>{let button=node("button",index===activeMonth?"active":"",month[1]);button.onclick=()=>{activeMonth=index;selectedDay=1;renderCalendar()};months.append(button)});
+particles();
 }
-
-function render(){
-const root=$("#schedule");
-root.replaceChildren();
-
-data.days.forEach((day,dayIndex)=>{
-const card=make("article","day");
-card.style.setProperty("--c1",day.color[0]);
-card.style.setProperty("--c2",day.color[1]);
-
-card.append(make("header","day-head",day.name));
-const lessons=make("div","lessons");
-
-data.items[dayIndex].forEach((item,lessonIndex)=>{
-const lesson=make("div","lesson"+(item.subject.trim()?"":" empty"));
-const top=make("div");
-
-top.append(
-make("span","lesson-no",String(lessonIndex+1)),
-make("span","time",data.times[lessonIndex])
-);
-
-lesson.append(top);
-
-const display=make("div","display-fields");
-display.append(make("div","subject",item.subject.trim()||"Урок не заповнено"));
-
-if(item.comment.trim()){
-display.append(make("div","comment",item.comment));
-}
-
-const href=safeUrl(item.url);
-
-if(href){
-const link=make("a","material","Відкрити матеріал ↗");
-link.href=href;
-link.target="_blank";
-link.rel="noopener noreferrer";
-display.append(link);
-}
-
-lesson.append(display);
-
-const fields=make("div","edit-fields");
-
-const subject=document.createElement("input");
-subject.className="field";
-subject.placeholder="Назва уроку";
-subject.value=item.subject;
-
-const comment=document.createElement("textarea");
-comment.className="field";
-comment.rows=2;
-comment.placeholder="Примітка";
-comment.value=item.comment;
-
-const url=document.createElement("input");
-url.className="field";
-url.type="url";
-url.placeholder="https://…";
-url.value=item.url;
-
-subject.addEventListener("input",()=>{
-item.subject=subject.value;
-updateCount();
+function renderSchedule(){
+let grid=$("#scheduleGrid");grid.replaceChildren();
+grid.append(node("div","time-head","◷  Час"));
+DAYS.forEach(day=>{let heading=node("div","day-head "+day.tone);heading.append(node("b","",day.short),node("strong","",day.name));grid.append(heading)});
+TIMES.forEach((time,lessonIndex)=>{
+let timeCell=node("div","time-cell");timeCell.append(node("span","num",String(lessonIndex+1)),node("span","time",time));grid.append(timeCell);
+DAYS.forEach((day,dayIndex)=>{
+let key=`${day.short}-${lessonIndex+1}`,value=data.values[key]||{subject:"",comment:"",url:""};
+let cell=node("div",`slot c${dayIndex+1}`);cell.append(node("i","accent"));
+let view=node("div","view");view.append(node("strong",value.subject?"":"empty",value.subject||"—"));
+if(value.comment)view.append(node("small","",value.comment));
+let href=safeUrl(value.url);
+if(href){let link=node("a","","Відкрити матеріал ↗");link.href=href;link.target="_blank";link.rel="noopener noreferrer";view.append(link)}
+let fields=node("div","fields");
+let subject=document.createElement("input"),comment=document.createElement("input"),url=document.createElement("input");
+subject.className=comment.className=url.className="field";
+subject.placeholder="Назва предмета";comment.placeholder="Короткий коментар";url.placeholder="https://…";
+subject.value=value.subject||"";comment.value=value.comment||"";url.value=value.url||"";
+function update(){data.values[key]={subject:subject.value,comment:comment.value,url:url.value};$("#statusText").textContent="Є незбережені зміни"}
+subject.oninput=update;comment.oninput=update;url.oninput=()=>{update();url.classList.toggle("bad",!!url.value.trim()&&!safeUrl(url.value))};
+fields.append(subject,comment,url);cell.append(view,fields);grid.append(cell);
 });
-
-comment.addEventListener("input",()=>{
-item.comment=comment.value;
 });
-
-url.addEventListener("input",()=>{
-item.url=url.value;
-url.classList.toggle("bad",Boolean(url.value.trim()&&!safeUrl(url.value)));
-});
-
-fields.append(subject,comment,url,make("div","hint","Лише безпечне посилання https://"));
-lesson.append(fields);
-lessons.append(lesson);
-});
-
-card.append(lessons);
-root.append(card);
-});
-
-updateCount();
 }
-
-function updateCount(){
-const count=data.items.flat().filter(item=>item.subject.trim()).length;
-$("#filled").textContent=`Заповнено: ${count} із 25`;
+function openDate(){
+let [name,short,y,m]=MONTHS[activeMonth],key=dateKey(y,m,selectedDay),events=data.events.filter(e=>e.date===key);
+let wrap=node("div","backdrop"),dialog=node("section","dialog"),head=node("div","dialog-head"),title=node("div");
+title.append(node("small","","КАЛЕНДАРНА ДАТА"),node("h3","",`${selectedDay} ${name.toLowerCase()} ${y}`));
+let close=node("button","close","×");close.onclick=()=>$("#modal").replaceChildren();head.append(title,close);
+let list=node("div","event-list");
+if(!events.length)list.append(node("p","","На цю дату позначок ще немає."));
+events.forEach(event=>{
+let row=node("div","event");row.append(node("i","dot "+event.type));
+let text=node("div");text.append(node("small","",TYPES[event.type]),node("strong","",event.title));row.append(text);
+if(event.url&&safeUrl(event.url)){let link=node("a","","↗");link.href=safeUrl(event.url);link.target="_blank";link.rel="noopener noreferrer";row.append(link)}
+if(editing){let remove=node("button","remove","×");remove.onclick=()=>{data.events=data.events.filter(item=>item.id!==event.id);renderCalendar();openDate()};row.append(remove)}
+list.append(row);
+});
+let form=node("form","event-form");
+let typeLabel=node("label","","Тип позначки"),select=document.createElement("select");
+Object.entries(TYPES).forEach(([value,text])=>{let option=document.createElement("option");option.value=value;option.textContent=text;select.append(option)});
+typeLabel.append(select);
+let titleLabel=node("label","","Короткий запис"),input=document.createElement("input");input.placeholder="Наприклад: День народження Марка";titleLabel.append(input);
+let linkLabel=node("label","","Посилання (необов’язково)"),url=document.createElement("input");url.placeholder="https://…";linkLabel.append(url);
+let add=node("button","","Додати позначку");form.append(typeLabel,titleLabel,linkLabel,add);
+form.onsubmit=event=>{event.preventDefault();if(!input.value.trim())return;if(url.value.trim()&&!safeUrl(url.value)){url.classList.add("bad");return}data.events.push({id:Date.now()+"-"+Math.random().toString(36).slice(2),date:key,type:select.value,title:input.value.trim(),url:safeUrl(url.value)});renderCalendar();openDate();$("#statusText").textContent="Є незбережені зміни"};
+dialog.append(head,list,form);wrap.append(dialog);wrap.onmousedown=event=>{if(event.target===wrap)$("#modal").replaceChildren()};$("#modal").replaceChildren(wrap);
 }
-
-function toggleEdit(){
-editing=!editing;
-$("#app").classList.toggle("editing",editing);
+function toggle(){
+editing=!editing;$("#app").classList.toggle("editing",editing);document.body.classList.toggle("editing",editing);
 $("#editBtn").textContent=editing?"✕ Завершити редагування":"✏️ Редагувати";
-$("#saveBtn").hidden=!editing;
-$("#exportBtn").hidden=!editing;
-if(!editing)render();
+$("#saveBtn").hidden=$("#exportBtn").hidden=!editing;$("#modeLabel").textContent=editing?"Режим учителя":"Лише перегляд";
+if(!editing){renderSchedule();$("#modal").replaceChildren()}
 }
-
-function message(text){
-const toast=$("#toast");
-toast.textContent=text;
-toast.classList.add("show");
-clearTimeout(message.timer);
-message.timer=setTimeout(()=>toast.classList.remove("show"),3200);
-}
-
+function toast(text){let box=$("#toast");box.textContent=text;box.classList.add("show");clearTimeout(toast.timer);toast.timer=setTimeout(()=>box.classList.remove("show"),3000)}
 function save(){
-const invalid=data.items.flat().some(item=>item.url.trim()&&!safeUrl(item.url));
-
-if(invalid){
-message("Посилання має починатися з https://");
-return false;
+let invalid=Object.values(data.values).some(value=>value.url&&value.url.trim()&&!safeUrl(value.url));
+if(invalid){toast("Перевірте посилання: дозволено лише https://");return false}
+localStorage.setItem(KEY,JSON.stringify(data));$("#statusText").textContent="Чернетку збережено на цьому комп’ютері";toast("Чернетку збережено");return true;
 }
-
-localStorage.setItem(KEY,JSON.stringify(data));
-message("Чернетку збережено на цьому комп’ютері");
-return true;
-}
-
-function exportHtml(){
+function exportFile(){
 if(!save())return;
-
-const clone=document.documentElement.cloneNode(true);
-clone.querySelector("#app").classList.remove("editing");
-clone.querySelector("#saveBtn").hidden=true;
-clone.querySelector("#exportBtn").hidden=true;
-clone.querySelector("#editBtn").textContent="✏️ Редагувати";
-
-let html="<!doctype html>\n"+clone.outerHTML;
-const json=JSON.stringify(data).replace(/</g,"\\u003c");
-
-html=html.replace(
-/\/\*__SCHEDULE_START__\*\/[\s\S]*?\/\*__SCHEDULE_END__\*\//,
-`/*__SCHEDULE_START__*/${json}/*__SCHEDULE_END__*/`
-);
-
-const blob=new Blob([html],{type:"text/html;charset=utf-8"});
-const link=document.createElement("a");
-link.href=URL.createObjectURL(blob);
-link.download="index.html";
-link.click();
-
-setTimeout(()=>URL.revokeObjectURL(link.href),1500);
-message("Оновлений index.html підготовлено");
+let clone=document.documentElement.cloneNode(true);
+clone.querySelector("#app").classList.remove("editing");clone.querySelector("#saveBtn").hidden=clone.querySelector("#exportBtn").hidden=true;
+clone.querySelector("#editBtn").textContent="✏️ Редагувати";clone.querySelector("#modeLabel").textContent="Лише перегляд";clone.querySelector("#modal").replaceChildren();
+let html="<!doctype html>\n"+clone.outerHTML,json=JSON.stringify(data).replace(/</g,"\\u003c");
+html=html.replace(/\/\*__DATA_START__\*\/[\s\S]*?\/\*__DATA_END__\*\//,`/*__DATA_START__*/${json}/*__DATA_END__*/`);
+let blob=new Blob([html],{type:"text/html;charset=utf-8"}),link=document.createElement("a");
+link.href=URL.createObjectURL(blob);link.download="index.html";link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1500);toast("Оновлений index.html підготовлено");
 }
-
-$("#editBtn").addEventListener("click",toggleEdit);
-$("#saveBtn").addEventListener("click",save);
-$("#exportBtn").addEventListener("click",exportHtml);
-
-$("#copyBtn").addEventListener("click",async()=>{
-try{
-await navigator.clipboard.writeText(location.href);
-message("Адресу розкладу скопійовано");
-}catch{
-message("Скопіюйте адресу з рядка браузера");
-}
-});
-
-render();
+$("#prevMonth").onclick=()=>{if(activeMonth){activeMonth--;selectedDay=1;renderCalendar()}};
+$("#nextMonth").onclick=()=>{if(activeMonth<MONTHS.length-1){activeMonth++;selectedDay=1;renderCalendar()}};
+$("#editBtn").onclick=toggle;$("#saveBtn").onclick=save;$("#exportBtn").onclick=exportFile;
+$("#copyBtn").onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast("Адресу скопійовано")}catch{toast("Скопіюйте адресу з рядка браузера")}};
+renderCalendar();renderSchedule();
 </script>
 </body>
 </html>
