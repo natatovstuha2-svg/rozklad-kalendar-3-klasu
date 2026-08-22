@@ -121,7 +121,88 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 footer{text-align:center;padding:22px 0 5px;color:#91acd0;font-size:12px}
 @media(max-width:1120px){.header-layout{grid-template-columns:1fr}.calendar{width:min(100%,680px);justify-self:center}}
 @media(max-width:690px){.shell{width:calc(100% - 14px)}.topbar{grid-template-columns:76px 1fr;min-height:180px;padding:14px}.logo{width:68px;height:68px;border-width:2px}.brand h1{font-size:31px}.brand h2{font-size:13px}.badge3{display:none}.months{grid-template-columns:repeat(4,1fr)}.panel{padding:10px}.season i:nth-child(n+9){display:none}}
-</style>
+/* Преміальний 3D-пластик і оновлена сезонна анімація */
+.day-head{
+  border:1px solid #ffffffa8;
+  box-shadow:inset 0 3px 2px #ffffffd9,inset 0 -10px 18px #002b4c24,0 9px 0 var(--shadow),0 17px 28px #000a2466;
+  transition:transform .22s ease,filter .22s ease,box-shadow .22s ease;
+}
+.day-head:hover{
+  transform:translateY(-6px) scale(1.018);
+  filter:saturate(1.14) brightness(1.04);
+  box-shadow:inset 0 4px 3px #fff,inset 0 -12px 20px #002b4c2b,0 12px 0 var(--shadow),0 22px 34px #000a2473;
+}
+.cyan{background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#9bfbff 0%,#27dff2 48%,#06a7d4 100%)}
+.green{background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#a4ffd5 0%,#37e7a3 48%,#06a66f 100%)}
+.yellow{background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#fffbd0 0%,#ffdc3f 48%,#f2a900 100%)}
+.orange{background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#ffe1ad 0%,#ff9a3d 48%,#e85b12 100%)}
+.pink{background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#ffd0ed 0%,#ff63bd 48%,#d72a87 100%)}
+.day-head b,.num,.badge3 b,.months button.active{
+  border:1px solid #ffffffa8;
+  box-shadow:inset 0 3px 2px #ffffffd9,inset 0 -7px 11px #9a580024,0 5px 0 #9d6200,0 10px 18px #00051f38;
+}
+.slot{
+  border:2px solid #f8fdff;
+  background:radial-gradient(circle at 22% 0%,#fff 0 18%,transparent 44%),linear-gradient(155deg,#ffffff 0%,#f5fbff 43%,#dcecf7 100%);
+  box-shadow:inset 0 4px 4px #fff,inset 0 -12px 20px #92aecb42,0 8px 0 #8eb4ce,0 16px 27px #00142f52;
+  transition:transform .22s ease,box-shadow .22s ease,filter .22s ease;
+}
+.slot:hover{
+  transform:translateY(-6px) scale(1.012);
+  filter:brightness(1.035);
+  box-shadow:inset 0 5px 5px #fff,inset 0 -13px 21px #85a8c845,0 12px 0 #8eb4ce,0 23px 34px #00142f5e;
+}
+.calendar{
+  border:2px solid #fff;
+  background:radial-gradient(circle at 18% 0%,#fff 0 18%,transparent 42%),linear-gradient(150deg,#ffffff 0%,#f1f9ff 54%,#dcecf8 100%);
+  box-shadow:inset 0 4px 5px #fff,inset 0 -12px 20px #9ab8d22b,0 11px 0 #a6c9e1,0 26px 48px #0008205c;
+}
+
+/* Осінь: золоті, жовті, помаранчеві й червоні листочки */
+.season.autumn i{
+  animation-name:leafSail;
+  animation-timing-function:cubic-bezier(.32,.03,.34,1);
+  will-change:transform,opacity;
+}
+.season.autumn i:nth-child(4n+1){filter:hue-rotate(37deg) saturate(1.7) brightness(1.35) drop-shadow(0 5px 6px #4c270080);--drift:145px}
+.season.autumn i:nth-child(4n+2){filter:hue-rotate(18deg) saturate(1.55) brightness(1.18) drop-shadow(0 5px 6px #4c270080);--drift:-90px}
+.season.autumn i:nth-child(4n+3){filter:hue-rotate(64deg) saturate(1.85) brightness(1.42) drop-shadow(0 5px 7px #4c270078);--drift:85px}
+.season.autumn i:nth-child(4n){filter:saturate(1.45) brightness(1.08) drop-shadow(0 5px 6px #4c270080);--drift:-130px}
+@keyframes leafSail{
+  0%{opacity:0;transform:translate3d(0,-55px,0) rotate(0deg) scale(.82)}
+  10%{opacity:1}
+  27%{transform:translate3d(38px,72px,0) rotate(120deg) scale(1)}
+  52%{transform:translate3d(-24px,158px,0) rotate(245deg) scale(.9)}
+  76%{opacity:.95;transform:translate3d(52px,246px,0) rotate(365deg) scale(1.05)}
+  100%{opacity:0;transform:translate3d(var(--drift,110px),355px,0) rotate(520deg) scale(.82)}
+}
+
+/* Весна: об’ємний біло-рожевий цвіт */
+.season.spring i{
+  width:var(--s);
+  height:var(--s);
+  font-size:0;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 50% 50%,#fff4a3 0 8%,#ffc339 9% 15%,#d9871e 16% 19%,transparent 21%),
+    radial-gradient(ellipse at 50% 14%,#fff 0 18%,#ffe9f2 19% 29%,#f3a9c9 30% 36%,transparent 38%),
+    radial-gradient(ellipse at 84% 41%,#fff 0 18%,#ffe9f2 19% 29%,#f3a9c9 30% 36%,transparent 38%),
+    radial-gradient(ellipse at 72% 82%,#fff 0 18%,#ffe9f2 19% 29%,#f3a9c9 30% 36%,transparent 38%),
+    radial-gradient(ellipse at 28% 82%,#fff 0 18%,#ffe9f2 19% 29%,#f3a9c9 30% 36%,transparent 38%),
+    radial-gradient(ellipse at 16% 41%,#fff 0 18%,#ffe9f2 19% 29%,#f3a9c9 30% 36%,transparent 38%);
+  filter:drop-shadow(0 5px 5px #001b4266) drop-shadow(0 0 8px #ffd9e9a6);
+  animation:blossomFloat 9s ease-in-out var(--delay) infinite;
+  will-change:transform,opacity;
+}
+.season.spring i:nth-child(3n+1){--flower-drift:34px}
+.season.spring i:nth-child(3n+2){--flower-drift:-28px;filter:drop-shadow(0 5px 5px #001b4266) drop-shadow(0 0 11px #ffffffd9)}
+.season.spring i:nth-child(3n){--flower-drift:18px;width:calc(var(--s) * .8);height:calc(var(--s) * .8)}
+@keyframes blossomFloat{
+  0%,100%{opacity:.18;transform:translate3d(0,12px,0) rotate(-8deg) scale(.72)}
+  28%{opacity:1;transform:translate3d(calc(var(--flower-drift,20px) * .45),-9px,0) rotate(6deg) scale(1.05)}
+  60%{opacity:.92;transform:translate3d(var(--flower-drift,20px),7px,0) rotate(-5deg) scale(.94)}
+  82%{opacity:1;transform:translate3d(calc(var(--flower-drift,20px) * .4),-4px,0) rotate(7deg) scale(1.02)}
+}</style>
 </head>
 <body>
 <main class="page">
