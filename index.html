@@ -70,41 +70,8 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .months button.active{color:#0d2b56;background:linear-gradient(145deg,#ffe86a,#ffc731);box-shadow:0 2px 0 #d09d0a}
 .legend{display:flex;justify-content:center;flex-wrap:wrap;gap:7px 14px;margin-top:10px;color:#69819f;font-size:9px;font-weight:850}
 .legend span{display:flex;align-items:center;gap:4px}
-
-/* ЗАКРІПЛЕНА ПАНЕЛЬ КЕРУВАННЯ ЗВЕРХУ ПРИ ПРОКРУТЦІ */
-.toolbar{
-  position:sticky;
-  top:10px;
-  z-index:90;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  flex-wrap:wrap;
-  margin:17px 0 10px;
-  min-height:66px;
-  padding:10px 13px;
-  border:1px solid #9edcff72;
-  border-radius:20px;
-  background:linear-gradient(145deg,#174d7ee8,#071d43f2);
-  backdrop-filter:blur(18px) saturate(1.35);
-  box-shadow:inset 0 2px 1px #ffffff52,inset 0 -2px 2px #00122f75,0 8px 0 #031631b8,0 18px 35px #00081f70;
-}
-.toolbar::before{
-  content:"";
-  width:44px;
-  height:44px;
-  flex:0 0 44px;
-  border:2px solid #ffe26d;
-  border-radius:50%;
-  background:#fff url("logo.png") center/92% no-repeat;
-  box-shadow:0 3px 0 #9c6300,0 7px 15px #00081f75,0 0 0 3px #fff2a629;
-}
-.toolbar h3{
-  margin:0 auto 0 0;
-  font-size:20px;
-  text-shadow:0 2px 5px #000b27;
-}
-
+.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:17px 0 10px}
+.toolbar h3{margin:0 auto 0 0;font-size:20px}
 .btn{padding:11px 15px;border:1px solid #ffffff32;border-radius:13px;color:#dcecff;font-weight:900;background:linear-gradient(145deg,#173d70,#0c2c5b);box-shadow:0 5px 0 #041a3c}
 .btn.gold{color:#102950;background:linear-gradient(145deg,#ffe971,#ffbd25);box-shadow:0 5px 0 #a96800}
 .btn.blue{color:#fff;background:linear-gradient(#2a92e9,#0860b3);box-shadow:0 5px 0 #06457f}
@@ -152,23 +119,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .toast.show{opacity:1;transform:none}
 footer{text-align:center;padding:22px 0 5px;color:#91acd0;font-size:12px}
 @media(max-width:1120px){.header-layout{grid-template-columns:1fr}.calendar{width:min(100%,680px);justify-self:center}}
-@media(max-width:690px){
-  .topbar::before{inset:-5%;background-size:225% auto;}
-  .toolbar{top:4px;min-height:56px;padding:7px 9px;border-radius:16px;}
-  .toolbar::before{width:38px;height:38px;flex-basis:38px;}
-  .toolbar h3{font-size:15px;}
-  .logo{width:68px;height:68px;border-width:2px}
-  .brand h1{font-size:31px}
-  .brand h2{font-size:13px}
-  .badge3{display:none}
-  .months{grid-template-columns:repeat(4,1fr)}
-  .panel{padding:10px}
-  .season i:nth-child(n+9){display:none}
-}
-@media(prefers-reduced-motion:reduce){
-  .topbar::before{animation:none}
-  .season.spring i{animation-duration:35s!important}
-}
+@media(max-width:690px){.shell{width:calc(100% - 14px)}.topbar{grid-template-columns:76px 1fr;min-height:180px;padding:14px}.logo{width:68px;height:68px;border-width:2px}.brand h1{font-size:31px}.brand h2{font-size:13px}.badge3{display:none}.months{grid-template-columns:repeat(4,1fr)}.panel{padding:10px}.season i:nth-child(n+9){display:none}}
 </style>
 </head>
 <body>
@@ -314,11 +265,11 @@ clone.querySelector("#app").classList.remove("editing");clone.querySelector("#sa
 clone.querySelector("#editBtn").textContent="✏️ Редагувати";clone.querySelector("#modeLabel").textContent="Лише перегляд";clone.querySelector("#modal").replaceChildren();
 let html="<!doctype html>\n"+clone.outerHTML,json=JSON.stringify(data).replace(/</g,"\\u003c");
 html=html.replace(/\/\*__DATA_START__\*\/[\s\S]*?\/\*__DATA_END__\*\//,`/*__DATA_START__*/${json}/*__DATA_END__*/`);
-let blob=new Blob([html],{type:"text/html;charset=utf-8"}},link=document.createElement("a");
+let blob=new Blob([html],{type:"text/html;charset=utf-8"}),link=document.createElement("a");
 link.href=URL.createObjectURL(blob);link.download="index.html";link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1500);toast("Оновлений index.html підготовлено");
 }
-$("[id='prevMonth']").onclick=()=>{if(activeMonth){activeMonth--;selectedDay=1;renderCalendar()}};
-$("[id='nextMonth']").onclick=()=>{if(activeMonth<MONTHS.length-1){activeMonth++;selectedDay=1;renderCalendar()}};
+$("#prevMonth").onclick=()=>{if(activeMonth){activeMonth--;selectedDay=1;renderCalendar()}};
+$("#nextMonth").onclick=()=>{if(activeMonth<MONTHS.length-1){activeMonth++;selectedDay=1;renderCalendar()}};
 $("#editBtn").onclick=toggle;$("#saveBtn").onclick=save;$("#exportBtn").onclick=exportFile;
 $("#copyBtn").onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast("Адресу скопійовано")}catch{toast("Скопіюйте адресу з рядка браузера")}};
 renderCalendar();renderSchedule();
