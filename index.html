@@ -1,6 +1,5 @@
-<!doctype html> 
-<html lang="uk">
-<head>
+<!doctype html>
+<html lang="uk"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#061a3b">
@@ -15,18 +14,16 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .page:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.2;background-image:radial-gradient(#fff .75px,transparent .75px);background-size:34px 34px;mask-image:linear-gradient(#000,transparent 68%)}
 .shell{position:relative;z-index:1;width:min(1460px,calc(100% - 34px));margin:auto;padding:0 0 30px}
 
-/* ===== ЗАКРІПЛЕНА ВЕРХНЯ ЗОНА ===== */
 .sticky-zone{position:sticky;top:0;z-index:60;padding:14px 0 10px;background:linear-gradient(180deg,#061a3bf2 0%,#061a3bd9 82%,#061a3b00 100%);backdrop-filter:blur(9px) saturate(1.06)}
 .header-layout{display:grid;grid-template-columns:minmax(0,1fr) 520px;gap:25px}
 
-/* ===== ШАПКА: 12 МІСЯЦІВ ЗА СКЛОМ ===== */
 .topbar{position:relative;isolation:isolate;display:grid;grid-template-columns:175px minmax(0,1fr);align-items:center;gap:18px;min-height:272px;padding:20px;overflow:hidden;border:1px solid #90d2ff55;border-radius:30px;background:#071d41;box-shadow:inset 0 1px 0 #ffffff55,0 20px 42px #00091f45}
-.cinema-layer{position:absolute;z-index:0;inset:-4%;pointer-events:none;background-repeat:no-repeat;background-size:cover;background-position:center;opacity:0;filter:saturate(1.12) contrast(1.04) brightness(.96);transform:scale(1.045);transition:opacity 1.15s ease;animation:seasonCinema 20s ease-in-out infinite alternate;will-change:transform,opacity}
+.cinema-layer{position:absolute;z-index:0;inset:-4%;pointer-events:none;background-repeat:no-repeat;background-size:cover;background-position:center;opacity:0;filter:saturate(1.12) contrast(1.04) brightness(.96);transform:scale(1.045);transition:opacity 1.15s ease;animation:seasonCinema 20s ease-in-out infinite alternate}
 .cinema-layer.active{opacity:1}
 @keyframes seasonCinema{0%{transform:scale(1.045) translate3d(-.35%,0,0)}100%{transform:scale(1.095) translate3d(.9%,-.45%,0)}}
 .skyfx{position:absolute;z-index:1;inset:0;overflow:hidden;pointer-events:none;border-radius:inherit}
 .glass-layer{position:absolute;z-index:2;inset:0;pointer-events:none;border-radius:inherit;background:radial-gradient(ellipse at 18% 8%,#ffffff4d 0,transparent 28%),linear-gradient(90deg,#03173262 0%,#05234848 40%,#03162f6b 100%),linear-gradient(180deg,#dff5ff24 0%,transparent 36%,#00132942 100%);backdrop-filter:blur(.75px) saturate(1.10);box-shadow:inset 0 2px 1px #ffffff8a,inset 0 -2px 1px #8edbff35,inset 0 0 38px #8bd9ff24}
-.glass-layer:after{content:"";position:absolute;inset:7px;border:1px solid #ffffff2b;border-radius:24px;background:linear-gradient(115deg,#ffffff18 0 8%,transparent 18% 78%,#ffffff0d 90%);pointer-events:none}
+.glass-layer:after{content:"";position:absolute;inset:7px;border:1px solid #ffffff2b;border-radius:24px;background:linear-gradient(115deg,#ffffff18 0 8%,transparent 18% 78%,#ffffff0d 90%)}
 .logo{position:relative;z-index:4;width:165px;height:165px;padding:7px;border:4px solid var(--gold);border-radius:50%;background:#fff;box-shadow:0 7px 0 #a96c00,0 15px 27px #00081f57,0 0 0 6px #ffd85224}
 .logo:before{content:"";position:absolute;inset:-10px;border-radius:50%;border:3px solid transparent;border-top-color:#fff4a1;border-right-color:#b87400;animation:ring 28s linear infinite}
 .logo img{width:100%;height:100%;object-fit:contain;border-radius:50%}
@@ -36,16 +33,15 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .titleline{display:flex;align-items:center;flex-wrap:wrap;gap:20px}
 .brand h1{margin:0;font-size:clamp(44px,5vw,72px);font-weight:950;line-height:.94;letter-spacing:-.055em;color:#dff5ff;text-shadow:0 1px 0 #eaf7ff,0 2px 0 #bdd5e6,0 3px 0 #8eafc7,0 5px 0 #294f76,0 10px 18px #00081f6b}
 .brand h1 span{color:#fff}
-.badge3{display:flex;align-items:center;gap:8px;padding:9px 15px 9px 10px;border:1px solid #ffffff59;border-radius:18px;background:#0518359c;backdrop-filter:blur(6px)}
+.badge3{display:flex;align-items:center;gap:8px;padding:9px 15px 9px 10px;border:1px solid #ffffff59;border-radius:18px;background:#0518359c}
 .badge3 b{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;color:#11234d;font-size:29px;background:linear-gradient(145deg,#ffe971,#ffb518);box-shadow:0 5px 0 #bc7200}
 .badge3 strong{font-size:13px;letter-spacing:.12em}
 .brand h2{margin:21px 0 14px;color:#e3f2ff;font-size:clamp(17px,1.55vw,23px)}
 .pills{display:flex;gap:9px;flex-wrap:wrap}
-.pill{display:inline-flex;align-items:center;min-height:35px;padding:8px 13px;border:1px solid #ffffff3f;border-radius:999px;font-size:11px;font-weight:850;background:#051835a8;backdrop-filter:blur(5px)}
+.pill{display:inline-flex;align-items:center;min-height:35px;padding:8px 13px;border:1px solid #ffffff3f;border-radius:999px;font-size:11px;font-weight:850;background:#051835a8}
 .pill.gold{color:#092950;background:linear-gradient(145deg,#ffe971,#ffbd25);box-shadow:0 4px 0 #a96800}
 
-/* ===== МІСЯЧНІ АНІМАЦІЇ ===== */
-.cloud{position:absolute;left:-28%;width:210px;height:74px;opacity:0;filter:blur(.15px);background:radial-gradient(ellipse at 28% 65%,#ffffffcc 0 24%,transparent 25%),radial-gradient(ellipse at 48% 48%,#ffffffd6 0 28%,transparent 29%),radial-gradient(ellipse at 69% 67%,#ffffffb8 0 24%,transparent 25%),radial-gradient(ellipse at 50% 82%,#ffffffa8 0 42%,transparent 43%);animation:cloudMove var(--dur,24s) linear var(--delay,0s) infinite;transform:scale(var(--scale,1));will-change:transform}
+.cloud{position:absolute;left:-28%;width:210px;height:74px;opacity:0;background:radial-gradient(ellipse at 28% 65%,#ffffffcc 0 24%,transparent 25%),radial-gradient(ellipse at 48% 48%,#ffffffd6 0 28%,transparent 29%),radial-gradient(ellipse at 69% 67%,#ffffffb8 0 24%,transparent 25%),radial-gradient(ellipse at 50% 82%,#ffffffa8 0 42%,transparent 43%);animation:cloudMove var(--dur,24s) linear var(--delay,0s) infinite;transform:scale(var(--scale,1))}
 @keyframes cloudMove{0%{opacity:0;transform:translateX(0) scale(var(--scale,1))}10%{opacity:.46}85%{opacity:.4}100%{opacity:0;transform:translateX(1550px) scale(var(--scale,1))}}
 .snow{position:absolute;top:-18px;left:var(--x);width:var(--s);height:var(--s);border-radius:50%;background:#fff;opacity:.9;box-shadow:0 0 7px #fff;animation:snowFall var(--d) linear var(--delay) infinite}
 @keyframes snowFall{0%{transform:translate3d(0,-15px,0);opacity:0}12%{opacity:.9}100%{transform:translate3d(var(--drift),330px,0);opacity:.12}}
@@ -59,11 +55,10 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 @keyframes mistBreath{from{transform:translateX(-1.5%);opacity:.55}to{transform:translateX(1.5%);opacity:.86}}
 .drop{position:absolute;left:var(--x);top:var(--y);width:var(--w);height:calc(var(--w) * 1.5);border-radius:55% 45% 58% 42%;border:1px solid #ffffff75;background:linear-gradient(145deg,#ffffff55,#8cc9e91a);box-shadow:inset 1px 1px 2px #ffffff7a,0 1px 3px #00112638;opacity:.55;animation:dropShine var(--d) ease-in-out var(--delay) infinite}
 @keyframes dropShine{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:.72;transform:translateY(2px)}}
-.bird-flock{position:absolute;right:-260px;top:16%;width:240px;opacity:0;filter:drop-shadow(0 2px 2px #ffffff30);animation:flockFly 17s linear 1.5s infinite}
+.bird-flock{position:absolute;right:-260px;top:16%;width:240px;opacity:0;animation:flockFly 17s linear 1.5s infinite}
 .bird-flock svg{display:block;width:100%;height:auto}.bird-flock path{fill:none;stroke:#152337;stroke-width:2.2;stroke-linecap:round;opacity:.78}
 @keyframes flockFly{0%{opacity:0;transform:translate3d(0,10px,0) scale(.78)}10%{opacity:.78}82%{opacity:.76}100%{opacity:0;transform:translate3d(-125vw,-34px,0) scale(1.03)}}
 
-/* ===== КАЛЕНДАР ===== */
 .calendar{padding:16px 20px;border:2px solid #fff;border-radius:28px;color:#102950;background:radial-gradient(circle at 18% 0%,#fff 0 18%,transparent 42%),linear-gradient(150deg,#ffffff 0%,#f1f9ff 54%,#dcecf8 100%);box-shadow:inset 0 4px 5px #fff,inset 0 -12px 20px #9ab8d22b,0 11px 0 #a6c9e1,0 26px 48px #0008205c}
 .cal-top{display:grid;grid-template-columns:38px 1fr 38px;align-items:center;gap:8px;margin-bottom:9px;text-align:center}
 .cal-top strong{display:block;font-size:22px}.cal-top small{color:#6682a7;font-weight:850}
@@ -84,7 +79,6 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .legend{display:flex;justify-content:center;flex-wrap:wrap;gap:7px 14px;margin-top:10px;color:#69819f;font-size:9px;font-weight:850}
 .legend span{display:flex;align-items:center;gap:4px}
 
-/* ===== ПАНЕЛЬ КЕРУВАННЯ ===== */
 .toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0 0;padding:8px 2px 5px}
 .toolbar h3{margin:0 auto 0 0;font-size:20px}
 .btn{padding:11px 15px;border:1px solid #ffffff32;border-radius:13px;color:#dcecff;font-weight:900;background:linear-gradient(145deg,#173d70,#0c2c5b);box-shadow:0 5px 0 #041a3c}
@@ -92,24 +86,21 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .btn.blue{color:#fff;background:linear-gradient(#2a92e9,#0860b3);box-shadow:0 5px 0 #06457f}
 .edit-note{display:none;width:100%;padding:12px 15px;border-radius:13px;color:#674800;background:#fff8d9;border:1px solid #e4bd42}.editing .edit-note{display:block}
 
-/* ===== РОЗКЛАД: ДНІ ТИЖНЯ ЗАКРІПЛЕНІ, УРОКИ ЙДУТЬ ПІД НИМИ ===== */
 .panel{padding:16px;border:1px solid #b5daff38;border-radius:30px;background:linear-gradient(145deg,#173d6cab,#061b3de0);box-shadow:0 30px 65px #0006196b}
 .scroll{overflow:auto;max-height:calc(100vh - 410px);min-height:330px;padding:3px 3px 14px;scrollbar-gutter:stable}
 .grid{min-width:1180px;display:grid;grid-template-columns:142px repeat(5,minmax(185px,1fr));gap:11px;align-items:stretch}
 .time-head,.day-head{position:sticky;top:0;z-index:12;height:69px;border-radius:19px}
 .time-head{left:0;z-index:16;display:flex;align-items:center;justify-content:center;color:#dcecff;font-weight:900;background:linear-gradient(145deg,#173d70,#0c2c5b);box-shadow:0 7px 0 #041a3c}
-.day-head{display:flex;align-items:center;justify-content:center;gap:9px;color:#061935;font-weight:950;border:1px solid #ffffffa8;box-shadow:inset 0 3px 2px #ffffffd9,inset 0 -10px 18px #002b4c24,0 9px 0 var(--shadow),0 17px 28px #000a2466;transition:transform .22s ease,filter .22s ease,box-shadow .22s ease}
-.day-head:hover{transform:translateY(-4px) scale(1.012);filter:saturate(1.14) brightness(1.04);box-shadow:inset 0 4px 3px #fff,inset 0 -12px 20px #002b4c2b,0 11px 0 var(--shadow),0 20px 31px #000a2473}
+.day-head{display:flex;align-items:center;justify-content:center;gap:9px;color:#061935;font-weight:950;border:1px solid #ffffffa8;box-shadow:inset 0 3px 2px #ffffffd9,inset 0 -10px 18px #002b4c24,0 9px 0 var(--shadow),0 17px 28px #000a2466}
 .cyan{--shadow:#008aaa;background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#9bfbff 0%,#27dff2 48%,#06a7d4 100%)}
 .green{--shadow:#07966e;background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#a4ffd5 0%,#37e7a3 48%,#06a66f 100%)}
 .yellow{--shadow:#c69600;background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#fffbd0 0%,#ffdc3f 48%,#f2a900 100%)}
 .orange{--shadow:#c66c00;background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#ffe1ad 0%,#ff9a3d 48%,#e85b12 100%)}
 .pink{--shadow:#bd317d;background:radial-gradient(circle at 25% 8%,#ffffffd9 0,transparent 28%),linear-gradient(155deg,#ffd0ed 0%,#ff63bd 48%,#d72a87 100%)}
 .time-cell{position:sticky;left:0;z-index:7;display:flex;align-items:center;gap:9px;min-height:91px;padding:12px;border-radius:18px;background:linear-gradient(145deg,#163967,#0a2852);box-shadow:0 6px 0 #03152f}
-.num{display:grid;place-items:center;width:38px;height:38px;border:1px solid #ffffffa8;border-radius:12px;color:#102950;font-size:20px;font-weight:950;background:linear-gradient(145deg,#ffe971,#ffbd25);box-shadow:inset 0 3px 2px #ffffffd9,inset 0 -7px 11px #9a580024,0 5px 0 #9d6200,0 10px 18px #00051f38}
+.num{display:grid;place-items:center;width:38px;height:38px;border:1px solid #ffffffa8;border-radius:12px;color:#102950;font-size:20px;font-weight:950;background:linear-gradient(145deg,#ffe971,#ffbd25);box-shadow:inset 0 3px 2px #ffffffd9,inset 0 -7px 11px #9a580024,0 5px 0 #9d6200}
 .time{color:#c8def6;font-size:12px;font-weight:850}
-.slot{position:relative;min-height:91px;padding:11px 12px 11px 17px;border:2px solid #f8fdff;border-radius:18px;color:#15345d;background:radial-gradient(circle at 22% 0%,#fff 0 18%,transparent 44%),linear-gradient(155deg,#ffffff 0%,#f5fbff 43%,#dcecf7 100%);box-shadow:inset 0 4px 4px #fff,inset 0 -12px 20px #92aecb42,0 8px 0 #8eb4ce,0 16px 27px #00142f52;transition:transform .22s ease,box-shadow .22s ease,filter .22s ease}
-.slot:hover{transform:translateY(-6px) scale(1.012);filter:brightness(1.035);box-shadow:inset 0 5px 5px #fff,inset 0 -13px 21px #85a8c845,0 12px 0 #8eb4ce,0 23px 34px #00142f5e}
+.slot{position:relative;min-height:91px;padding:11px 12px 11px 17px;border:2px solid #f8fdff;border-radius:18px;color:#15345d;background:radial-gradient(circle at 22% 0%,#fff 0 18%,transparent 44%),linear-gradient(155deg,#ffffff 0%,#f5fbff 43%,#dcecf7 100%);box-shadow:inset 0 4px 4px #fff,inset 0 -12px 20px #92aecb42,0 8px 0 #8eb4ce}
 .accent{position:absolute;left:6px;top:13px;bottom:13px;width:5px;border-radius:5px;background:var(--accent)}
 .slot.c1{--accent:#18c8e7}.slot.c2{--accent:#21d99a}.slot.c3{--accent:#ffc928}.slot.c4{--accent:#ff842d}.slot.c5{--accent:#ef4fa9}
 .view strong{display:block;font-size:15px}.view strong.empty{color:#9aafc1}
@@ -117,26 +108,53 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .view a{display:inline-block;margin-top:7px;color:#0871ba;font-size:11px;font-weight:900;text-decoration:none}
 .fields{display:none;gap:5px}.editing .fields{display:grid}.editing .view{display:none}
 .field{width:100%;padding:7px 8px;border:1px solid #c8dbea;border-radius:9px;color:#15345d;background:#fff}.field.bad{border-color:#d84363;background:#fff1f5}
-.status{display:flex;align-items:center;justify-content:space-between;gap:13px;flex-wrap:wrap;margin-top:13px;padding:13px;color:#b9d5f3;font-size:12px}.status span{display:flex;align-items:center;gap:8px}.status i{width:9px;height:9px;border-radius:50%;background:#47ecbb;box-shadow:0 0 18px #47ecbb}
+.status{display:flex;align-items:center;justify-content:space-between;gap:13px;flex-wrap:wrap;margin-top:13px;padding:13px;color:#b9d5f3;font-size:12px}
+.status span{display:flex;align-items:center;gap:8px}.status i{width:9px;height:9px;border-radius:50%;background:#47ecbb}
 
-/* ===== ДІАЛОГИ ===== */
-.backdrop{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:#020d23b8;backdrop-filter:blur(8px)}
+.mobile-schedule{display:none}
+.mobile-days{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin:2px 0 15px}
+.mobile-day{min-width:0;padding:11px 2px;border:1px solid #ffffff9c;border-radius:13px;color:#061935;font-size:13px;font-weight:950;box-shadow:inset 0 2px 2px #ffffffc7,inset 0 -7px 12px #002b4c20,0 5px 0 var(--shadow);opacity:.72}
+.mobile-day.active{opacity:1;filter:saturate(1.12) brightness(1.05);transform:translateY(-2px);outline:3px solid #fff;outline-offset:2px}
+.mobile-day-title{display:flex;align-items:center;justify-content:center;gap:9px;min-height:58px;margin:0 0 14px;border:1px solid #ffffffa8;border-radius:17px;color:#061935;font-size:18px;font-weight:950;box-shadow:inset 0 3px 2px #ffffffd9,inset 0 -9px 16px #002b4c24,0 7px 0 var(--shadow)}
+.mobile-lessons{display:grid;gap:13px}
+.mobile-lesson{display:grid;grid-template-columns:98px minmax(0,1fr);gap:10px}
+.mobile-time{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;min-width:0;padding:10px 6px;border-radius:17px;background:linear-gradient(145deg,#163967,#0a2852);box-shadow:0 6px 0 #03152f}
+.mobile-time .time{text-align:center;font-size:11px;line-height:1.25}
+.mobile-lesson .slot{min-width:0;min-height:94px}
+
+.backdrop{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:#020d23b8}
 .dialog{width:min(100%,480px);max-height:calc(100vh - 40px);overflow:auto;padding:22px;border-radius:24px;color:#102950;background:linear-gradient(145deg,#fff,#eef7ff);box-shadow:0 14px 0 #a9c9e6,0 32px 80px #0005197a}
 .dialog-head{display:flex;justify-content:space-between;gap:20px;padding-bottom:13px;border-bottom:1px solid #d9e7f3}.dialog h3{margin:3px 0 0}.close{width:34px;height:34px;border:0;border-radius:11px;font-size:24px;background:#e1eef9}
-.event-list{display:grid;gap:9px;margin:15px 0}.event{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:10px;padding:11px;border:1px solid #dce9f4;border-radius:14px;background:#ffffffb8}.event strong,.event small{display:block}.event small{color:#7187a2;font-size:9px;text-transform:uppercase}.remove{width:30px;height:30px;border:0;border-radius:9px;color:#d34269;font-size:20px;background:#fff0f4}
+.event-list{display:grid;gap:9px;margin:15px 0}.event{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:10px;padding:11px;border:1px solid #dce9f4;border-radius:14px;background:#ffffffb8}.event strong,.event small{display:block}.event small{color:#7187a2;font-size:9px}.remove{width:30px;height:30px;border:0;border-radius:9px;color:#d34269;font-size:20px;background:#fff0f4}
 .event-form{display:none;gap:10px;padding-top:15px;border-top:1px solid #d9e7f3}.editing .event-form{display:grid}.event-form label{color:#607997;font-size:10px;font-weight:900}.event-form input,.event-form select{display:block;width:100%;margin-top:5px;padding:10px;border:1px solid #c9dbea;border-radius:10px}.event-form button{padding:11px;border:0;border-radius:11px;font-weight:900;background:linear-gradient(145deg,#ffe971,#ffbd25)}
 .toast{position:fixed;right:22px;bottom:22px;z-index:140;padding:14px 18px;border-radius:15px;color:#fff;background:#07365f;opacity:0;transform:translateY(20px);transition:.25s}.toast.show{opacity:1;transform:none}
 footer{text-align:center;padding:22px 0 5px;color:#91acd0;font-size:12px}
 
 @media(max-width:1120px){
-  .sticky-zone{position:relative;top:auto;background:transparent;backdrop-filter:none}
-  .header-layout{grid-template-columns:1fr}.calendar{width:min(100%,680px);justify-self:center}
-  .scroll{max-height:none;min-height:0}
+.sticky-zone{position:relative;top:auto;background:transparent;backdrop-filter:none}
+.header-layout{grid-template-columns:1fr}.calendar{width:min(100%,680px);justify-self:center}
+.scroll{max-height:none;min-height:0}
 }
 @media(max-width:690px){
-  .shell{width:calc(100% - 14px)}.topbar{grid-template-columns:76px 1fr;min-height:180px;padding:14px}.logo{width:68px;height:68px;border-width:2px}.brand h1{font-size:31px}.brand h2{font-size:13px}.badge3{display:none}.months{grid-template-columns:repeat(4,1fr)}.panel{padding:10px}.cloud{width:150px}.bird-flock{width:170px}
+.shell{width:calc(100% - 14px)}
+.topbar{grid-template-columns:76px minmax(0,1fr);min-height:180px;padding:14px}
+.logo{width:68px;height:68px;border-width:2px}
+.brand{min-width:0}.brand h1{font-size:31px}.brand h2{font-size:13px}
+.badge3{display:none}.months{grid-template-columns:repeat(4,1fr)}
+.panel{padding:10px;border-radius:22px}
+.scroll{display:none}.mobile-schedule{display:block}
+.toolbar h3{width:100%}.toolbar .btn{flex:1 1 auto}
+.status{padding:13px 4px 5px}.status .btn{width:100%}
+.view strong{font-size:15px;overflow-wrap:anywhere}.view small{font-size:12px}
 }
-@media(prefers-reduced-motion:reduce){.cinema-layer,.cloud,.snow,.petal,.leaf,.spark,.mist,.drop,.bird-flock,.logo:before{animation:none!important}.cinema-layer{transform:scale(1.05)}.slot,.day-head{transition:none}}
+@media(max-width:390px){
+.mobile-lesson{grid-template-columns:86px minmax(0,1fr);gap:8px}
+.mobile-time{padding-inline:4px}.mobile-time .time{font-size:10px}
+.mobile-day{font-size:12px}.slot{padding-right:9px}
+}
+@media(prefers-reduced-motion:reduce){
+.cinema-layer,.cloud,.snow,.petal,.leaf,.spark,.mist,.drop,.bird-flock,.logo:before{animation:none!important}
+}
 </style>
 </head>
 <body>
@@ -145,7 +163,7 @@ footer{text-align:center;padding:22px 0 5px;color:#91acd0;font-size:12px}
 
 <div class="sticky-zone">
 <section class="header-layout">
-<header class="topbar" id="topbar">
+<header class="topbar">
 <div class="cinema-layer active" id="sceneA"></div>
 <div class="cinema-layer" id="sceneB"></div>
 <div class="skyfx" id="skyFx"></div>
@@ -153,18 +171,32 @@ footer{text-align:center;padding:22px 0 5px;color:#91acd0;font-size:12px}
 <div class="logo"><img src="logo.png" alt="Логотип Львівського ліцею"></div>
 <div class="brand">
 <p>2026–2027 навчальний рік</p>
-<div class="titleline"><h1><span>Розклад</span> уроків</h1><div class="badge3"><b>3</b><strong>КЛАС</strong></div></div>
+<div class="titleline">
+<h1><span>Розклад</span> уроків</h1>
+<div class="badge3"><b>3</b><strong>КЛАС</strong></div>
+</div>
 <h2>Плануємо, навчаємося, встигаємо!</h2>
-<div class="pills"><span class="pill">● Львівський ліцей</span><span class="pill gold" id="modeLabel">Лише перегляд</span></div>
+<div class="pills">
+<span class="pill">● Львівський ліцей</span>
+<span class="pill gold" id="modeLabel">Лише перегляд</span>
+</div>
 </div>
 </header>
 
 <aside class="calendar">
-<div class="cal-top"><button class="arrow" id="prevMonth">‹</button><div><strong id="monthName"></strong><small id="monthYear"></small></div><button class="arrow" id="nextMonth">›</button></div>
+<div class="cal-top">
+<button class="arrow" id="prevMonth">‹</button>
+<div><strong id="monthName"></strong><small id="monthYear"></small></div>
+<button class="arrow" id="nextMonth">›</button>
+</div>
 <div class="week"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Нд</span></div>
 <div class="days" id="calendarDays"></div>
 <div class="months" id="months"></div>
-<div class="legend"><span><i class="dot birthday"></i>Іменинник</span><span><i class="dot holiday"></i>Державне свято</span><span><i class="dot class-event"></i>Подія класу</span></div>
+<div class="legend">
+<span><i class="dot birthday"></i>Іменинник</span>
+<span><i class="dot holiday"></i>Державне свято</span>
+<span><i class="dot class-event"></i>Подія класу</span>
+</div>
 </aside>
 </section>
 
@@ -179,182 +211,715 @@ footer{text-align:center;padding:22px 0 5px;color:#91acd0;font-size:12px}
 
 <section class="panel">
 <div class="scroll"><div class="grid" id="scheduleGrid"></div></div>
-<div class="status"><span><i></i><b id="statusText">Актуальний розклад 3 класу</b></span><button class="btn" id="copyBtn">🔗 Скопіювати адресу</button></div>
+<div class="mobile-schedule" id="mobileSchedule"></div>
+<div class="status">
+<span><i></i><b id="statusText">Актуальний розклад 3 класу</b></span>
+<button class="btn" id="copyBtn">🔗 Скопіювати адресу</button>
+</div>
 </section>
+
 <footer>Навчаємося разом — крок за кроком до нових відкриттів</footer>
 </div>
 </main>
-<div id="modal"></div><div class="toast" id="toast"></div>
+<div id="modal"></div>
+<div class="toast" id="toast"></div>
 
 <script>
-const INITIAL_DATA=/*__DATA_START__*/{"values":{},"events":[]}/*__DATA_END__*/;
-const DAYS=[{name:"Понеділок",short:"Пн",tone:"cyan"},{name:"Вівторок",short:"Вт",tone:"green"},{name:"Середа",short:"Ср",tone:"yellow"},{name:"Четвер",short:"Чт",tone:"orange"},{name:"П’ятниця",short:"Пт",tone:"pink"}];
+const INITIAL_DATA=/*__DATA_START__*/{"values":{"Пн-1":{"subject":"Англійська","comment":"Прищепюк Т. Ю. ","url":""},"Вт-1":{"subject":"Інформатика","comment":"Чистякова А. В.","url":""},"Ср-1":{"subject":"Англійська","comment":"Прищепюк Т. Ю.","url":""},"Пт-1":{"subject":"Англійська","comment":"","url":""},"Пт-5":{"subject":"ЯДС","comment":"Товстуха Н.С.","url":""},"Чт-1":{"subject":"Літературне читання","comment":"Товстуха Н.С.","url":""},"Пн-5":{"subject":"фізкультура","comment":"Лондарева А. М. ","url":""},"Ср-5":{"subject":"фізкультура","comment":"Лондарева А. М.","url":""},"Чт-2":{"subject":"українська мова","comment":"Товстуха Н.С.","url":""},"Чт-3":{"subject":"математика","comment":"","url":""},"Пт-2":{"subject":"фізкультура","comment":"Лондарева А.М.","url":""},"Пт-3":{"subject":"математика","comment":"Товстуха Н.С.","url":""},"Пт-4":{"subject":"українська мова/ літер.чит.","comment":"Товстуха Н.С.","url":""},"Пн-2":{"subject":"Літер. читання","comment":"Товстуха Н. С.","url":""},"Пн-3":{"subject":"українська мова","comment":"Товстуха Н. С.","url":""},"Пн-4":{"subject":"математика","comment":"Товстуха Н. С.","url":""},"Вт-2":{"subject":"Літер. читання","comment":"Товстуха Н. С.","url":""},"Вт-3":{"subject":"укр. мова","comment":"Товстуха Н. С.","url":""},"Вт-4":{"subject":"математика","comment":"Товстуха Н. С.","url":""},"Вт-5":{"subject":"дизайн і технології","comment":"Товстуха Н. С.","url":""},"Ср-2":{"subject":"ЯДС","comment":"Товстуха Н. С.","url":""},"Ср-3":{"subject":"математика","comment":"Товстуха Н. С.","url":""},"Ср-4":{"subject":"мистецтво ","comment":"Товстуха Н. С.","url":""},"Чт-4":{"subject":"ЯДС","comment":"Товстуха Н. С.","url":""},"Чт-5":{"subject":"мистецтво","comment":"Товстуха Н. С.","url":""}},"events":[{"id":"1787818430134-42pdtg9340n","date":"2026-09-28","type":"birthday","title":"Кулик Матвій","url":""},{"id":"1787818474234-omh1l0wc1fa","date":"2026-12-30","type":"birthday","title":"Чистяков Олексій","url":""},{"id":"1787818506638-g2ktojtcqr","date":"2027-04-11","type":"birthday","title":"Росподнюк Даніл","url":""},{"id":"1787818531519-rjyqlk7k508","date":"2027-05-02","type":"birthday","title":"Бондаренко Самуіл","url":""},{"id":"1787818612945-ldtyck0a8r","date":"2027-05-18","type":"birthday","title":"Тимошенко Артем","url":""},{"id":"1787818630131-r1nr0f1yzjb","date":"2027-05-19","type":"birthday","title":"Кулішова Мілана","url":""},{"id":"1787818653750-c6zm6dx11k","date":"2027-08-12","type":"birthday","title":"Давиденко Ганна","url":""},{"id":"1787818673487-ijsw9gfkmpo","date":"2027-08-30","type":"birthday","title":"Гноєвий Тимофій","url":""}]}/*__DATA_END__*/;
+
+const DAYS=[
+{name:"Понеділок",short:"Пн",tone:"cyan"},
+{name:"Вівторок",short:"Вт",tone:"green"},
+{name:"Середа",short:"Ср",tone:"yellow"},
+{name:"Четвер",short:"Чт",tone:"orange"},
+{name:"П’ятниця",short:"Пт",tone:"pink"}
+];
+
 const TIMES=["16.00–16.30","16.40–17.10","17.20–17.50","18.00–18.30","18.40–19.10"];
-const MONTHS=[["Вересень","Вер",2026,8],["Жовтень","Жов",2026,9],["Листопад","Лис",2026,10],["Грудень","Гру",2026,11],["Січень","Січ",2027,0],["Лютий","Лют",2027,1],["Березень","Бер",2027,2],["Квітень","Кві",2027,3],["Травень","Тра",2027,4],["Червень","Чер",2027,5],["Липень","Лип",2027,6],["Серпень","Сер",2027,7]];
-const TYPES={birthday:"Іменинник у класі",holiday:"Державне свято","class-event":"Подія класу"};
-const KEY="schedule-3-class-full-draft";
-const SCENES={
-0:["01-sichen.png","center 58%"],1:["02-lyutyi.png","center 56%"],2:["03-berezen.png","center 53%"],3:["04-kviten.png","center 50%"],
-4:["05-traven.png","center 48%"],5:["06-cherven.png","center 52%"],6:["07-lypen.png","center 50%"],7:["08-serpen.png","center 54%"],
-8:["09-veresen.png","center 53%"],9:["10-zhovten.png","center 52%"],10:["11-lystopad.png","center 50%"],11:["12-hruden.png","center 55%"]
+
+const MONTHS=[
+["Вересень","Вер",2026,8],["Жовтень","Жов",2026,9],
+["Листопад","Лис",2026,10],["Грудень","Гру",2026,11],
+["Січень","Січ",2027,0],["Лютий","Лют",2027,1],
+["Березень","Бер",2027,2],["Квітень","Кві",2027,3],
+["Травень","Тра",2027,4],["Червень","Чер",2027,5],
+["Липень","Лип",2027,6],["Серпень","Сер",2027,7]
+];
+
+const TYPES={
+birthday:"Іменинник у класі",
+holiday:"Державне свято",
+"class-event":"Подія класу"
 };
-let editing=false,activeMonth=0,selectedDay=1,currentScene="A",lastSceneMonth=null;
+
+const SCENES={
+0:["01-sichen.png","center 58%"],1:["02-lyutyi.png","center 56%"],
+2:["03-berezen.png","center 53%"],3:["04-kviten.png","center 50%"],
+4:["05-traven.png","center 48%"],5:["06-cherven.png","center 52%"],
+6:["07-lypen.png","center 50%"],7:["08-serpen.png","center 54%"],
+8:["09-veresen.png","center 53%"],9:["10-zhovten.png","center 52%"],
+10:["11-lystopad.png","center 50%"],11:["12-hruden.png","center 55%"]
+};
+
+const KEY="schedule-3-class-full-draft";
+const $=selector=>document.querySelector(selector);
+
+let editing=false;
+let activeMonth=0;
+let selectedDay=1;
+let currentScene="A";
+let lastSceneMonth=null;
+
+let currentWeekday=new Date().getDay();
+let activeScheduleDay=currentWeekday>=1&&currentWeekday<=5
+?currentWeekday-1:0;
+
 let data=load()||JSON.parse(JSON.stringify(INITIAL_DATA));
-data.values=data.values||{};data.events=data.events||[];
-const $=s=>document.querySelector(s);
-function load(){try{let v=localStorage.getItem(KEY);return v?JSON.parse(v):null}catch{return null}}
-function node(tag,cls,text){let n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n}
-function safeUrl(v){v=(v||"").trim();if(!v)return"";try{let u=new URL(v);return u.protocol==="https:"?u.href:""}catch{return""}}
-function dateKey(y,m,d){return`${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`}
+data.values=data.values||{};
+data.events=data.events||[];
+
+function load(){
+try{
+let value=localStorage.getItem(KEY);
+return value?JSON.parse(value):null;
+}catch{
+return null;
+}
+}
+
+function node(tag,className,text){
+let element=document.createElement(tag);
+if(className)element.className=className;
+if(text!==undefined)element.textContent=text;
+return element;
+}
+
+function safeUrl(value){
+value=(value||"").trim();
+if(!value)return"";
+try{
+let url=new URL(value);
+return url.protocol==="https:"?url.href:"";
+}catch{
+return"";
+}
+}
+
+function dateKey(year,month,day){
+return`${year}-${String(month+1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+}
 
 function setMonthScene(month){
-  if(month===lastSceneMonth)return;
-  lastSceneMonth=month;
-  const [file,pos]=SCENES[month];
-  const show=currentScene==="A"?$("#sceneB"):$("#sceneA");
-  const hide=currentScene==="A"?$("#sceneA"):$("#sceneB");
-  show.style.backgroundImage=`url("${file}")`;
-  show.style.backgroundPosition=pos;
-  requestAnimationFrame(()=>{show.classList.add("active");hide.classList.remove("active")});
-  currentScene=currentScene==="A"?"B":"A";
-  renderMonthFx(month);
+if(month===lastSceneMonth)return;
+lastSceneMonth=month;
+
+const [file,position]=SCENES[month];
+const show=currentScene==="A"?$("#sceneB"):$("#sceneA");
+const hide=currentScene==="A"?$("#sceneA"):$("#sceneB");
+
+show.style.backgroundImage=`url("${file}")`;
+show.style.backgroundPosition=position;
+
+requestAnimationFrame(()=>{
+show.classList.add("active");
+hide.classList.remove("active");
+});
+
+currentScene=currentScene==="A"?"B":"A";
+renderMonthFx(month);
 }
 
-function cssVar(el,name,value){el.style.setProperty(name,value);return el}
+function cssVar(element,name,value){
+element.style.setProperty(name,value);
+return element;
+}
+
 function addClouds(count=3){
-  const fx=$("#skyFx");
-  const presets=[
-    {top:"8%",dur:"27s",delay:"-8s",scale:".78"},
-    {top:"28%",dur:"34s",delay:"-21s",scale:"1.05"},
-    {top:"3%",dur:"39s",delay:"-30s",scale:".58"}
-  ];
-  for(let i=0;i<count;i++){let c=node("span","cloud"),p=presets[i%presets.length];c.style.top=p.top;cssVar(c,"--dur",p.dur);cssVar(c,"--delay",p.delay);cssVar(c,"--scale",p.scale);fx.append(c)}
+const fx=$("#skyFx");
+const presets=[
+{top:"8%",dur:"27s",delay:"-8s",scale:".78"},
+{top:"28%",dur:"34s",delay:"-21s",scale:"1.05"},
+{top:"3%",dur:"39s",delay:"-30s",scale:".58"}
+];
+
+for(let i=0;i<count;i++){
+let cloud=node("span","cloud");
+let preset=presets[i%presets.length];
+
+cloud.style.top=preset.top;
+cssVar(cloud,"--dur",preset.dur);
+cssVar(cloud,"--delay",preset.delay);
+cssVar(cloud,"--scale",preset.scale);
+fx.append(cloud);
 }
+}
+
 function addSnow(count=20){
-  const fx=$("#skyFx");
-  for(let i=0;i<count;i++){let s=node("i","snow");cssVar(s,"--x",`${(i*47)%97}%`);cssVar(s,"--s",`${3+(i%4)*1.4}px`);cssVar(s,"--d",`${8+(i%6)*1.7}s`);cssVar(s,"--delay",`${-(i%9)*1.35}s`);cssVar(s,"--drift",`${-28+(i%7)*11}px`);fx.append(s)}
+const fx=$("#skyFx");
+
+for(let i=0;i<count;i++){
+let snow=node("i","snow");
+cssVar(snow,"--x",`${(i*47)%97}%`);
+cssVar(snow,"--s",`${3+(i%4)*1.4}px`);
+cssVar(snow,"--d",`${8+(i%6)*1.7}s`);
+cssVar(snow,"--delay",`${-(i%9)*1.35}s`);
+cssVar(snow,"--drift",`${-28+(i%7)*11}px`);
+fx.append(snow);
 }
+}
+
 function addPetals(count=13){
-  const fx=$("#skyFx");
-  for(let i=0;i<count;i++){let p=node("i","petal");cssVar(p,"--x",`${(i*37+7)%96}%`);cssVar(p,"--d",`${9+(i%5)*2.1}s`);cssVar(p,"--delay",`${-(i%8)*1.7}s`);cssVar(p,"--drift",`${-55+(i%6)*24}px`);fx.append(p)}
+const fx=$("#skyFx");
+
+for(let i=0;i<count;i++){
+let petal=node("i","petal");
+cssVar(petal,"--x",`${(i*37+7)%96}%`);
+cssVar(petal,"--d",`${9+(i%5)*2.1}s`);
+cssVar(petal,"--delay",`${-(i%8)*1.7}s`);
+cssVar(petal,"--drift",`${-55+(i%6)*24}px`);
+fx.append(petal);
 }
+}
+
 function addLeaves(count=14,soft=false){
-  const fx=$("#skyFx"),colors=soft?["#e8be4b","#d99f2b","#f0ce68"]:["#ffd52f","#ff9b24","#f56a1f","#c84518"];
-  for(let i=0;i<count;i++){let l=node("i","leaf");cssVar(l,"--x",`${(i*43+3)%98}%`);cssVar(l,"--d",`${9+(i%6)*1.75}s`);cssVar(l,"--delay",`${-(i%10)*1.2}s`);cssVar(l,"--drift",`${-70+(i%8)*23}px`);cssVar(l,"--leaf",colors[i%colors.length]);if(soft)l.style.opacity=".62";fx.append(l)}
+const fx=$("#skyFx");
+const colors=soft
+?["#e8be4b","#d99f2b","#f0ce68"]
+:["#ffd52f","#ff9b24","#f56a1f","#c84518"];
+
+for(let i=0;i<count;i++){
+let leaf=node("i","leaf");
+cssVar(leaf,"--x",`${(i*43+3)%98}%`);
+cssVar(leaf,"--d",`${9+(i%6)*1.75}s`);
+cssVar(leaf,"--delay",`${-(i%10)*1.2}s`);
+cssVar(leaf,"--drift",`${-70+(i%8)*23}px`);
+cssVar(leaf,"--leaf",colors[i%colors.length]);
+if(soft)leaf.style.opacity=".62";
+fx.append(leaf);
 }
+}
+
 function addSparkles(count=7){
-  const fx=$("#skyFx");
-  for(let i=0;i<count;i++){let s=node("i","spark");cssVar(s,"--x",`${8+(i*17)%86}%`);cssVar(s,"--y",`${8+(i*23)%67}%`);cssVar(s,"--d",`${3.2+(i%4)*.7}s`);cssVar(s,"--delay",`${-(i%5)*.8}s`);fx.append(s)}
+const fx=$("#skyFx");
+
+for(let i=0;i<count;i++){
+let spark=node("i","spark");
+cssVar(spark,"--x",`${8+(i*17)%86}%`);
+cssVar(spark,"--y",`${8+(i*23)%67}%`);
+cssVar(spark,"--d",`${3.2+(i%4)*.7}s`);
+cssVar(spark,"--delay",`${-(i%5)*.8}s`);
+fx.append(spark);
 }
+}
+
 function addNovemberGlass(){
-  const fx=$("#skyFx");fx.append(node("div","mist"));
-  for(let i=0;i<8;i++){let d=node("i","drop");cssVar(d,"--x",`${7+(i*13)%88}%`);cssVar(d,"--y",`${8+(i*19)%68}%`);cssVar(d,"--w",`${5+(i%4)*2}px`);cssVar(d,"--d",`${5+(i%3)*1.7}s`);cssVar(d,"--delay",`${-(i%5)}s`);fx.append(d)}
+const fx=$("#skyFx");
+fx.append(node("div","mist"));
+
+for(let i=0;i<8;i++){
+let drop=node("i","drop");
+cssVar(drop,"--x",`${7+(i*13)%88}%`);
+cssVar(drop,"--y",`${8+(i*19)%68}%`);
+cssVar(drop,"--w",`${5+(i%4)*2}px`);
+cssVar(drop,"--d",`${5+(i%3)*1.7}s`);
+cssVar(drop,"--delay",`${-(i%5)}s`);
+fx.append(drop);
 }
+}
+
 function addBirdFlock(){
-  const fx=$("#skyFx"),flock=node("div","bird-flock");
-  flock.innerHTML=`<svg viewBox="0 0 240 90" aria-hidden="true">
-    <path d="M8 35 Q16 27 24 35 Q32 27 40 35"/><path d="M54 20 Q61 14 68 20 Q75 14 82 20"/>
-    <path d="M93 43 Q101 35 109 43 Q117 35 125 43"/><path d="M132 15 Q139 9 146 15 Q153 9 160 15"/>
-    <path d="M167 34 Q175 27 183 34 Q191 27 199 34"/><path d="M202 55 Q209 49 216 55 Q223 49 230 55"/>
-    <path d="M67 63 Q74 57 81 63 Q88 57 95 63"/><path d="M145 67 Q151 62 157 67 Q163 62 169 67"/>
-  </svg>`;fx.append(flock)
+const fx=$("#skyFx");
+const flock=node("div","bird-flock");
+
+flock.innerHTML=`
+<svg viewBox="0 0 240 90" aria-hidden="true">
+<path d="M8 35 Q16 27 24 35 Q32 27 40 35"/>
+<path d="M54 20 Q61 14 68 20 Q75 14 82 20"/>
+<path d="M93 43 Q101 35 109 43 Q117 35 125 43"/>
+<path d="M132 15 Q139 9 146 15 Q153 9 160 15"/>
+<path d="M167 34 Q175 27 183 34 Q191 27 199 34"/>
+<path d="M202 55 Q209 49 216 55 Q223 49 230 55"/>
+</svg>`;
+
+fx.append(flock);
 }
+
 function renderMonthFx(month){
-  const fx=$("#skyFx");fx.replaceChildren();
-  if([1,2,3,5,6,7,8].includes(month))addClouds(month===2?2:3);
-  if(month===0){addSnow(22);addSparkles(5)}
-  if(month===1)addSnow(10);
-  if(month===4)addPetals(15);
-  if(month===8)addLeaves(5,true);
-  if(month===9){addLeaves(16);addBirdFlock()}
-  if(month===10)addNovemberGlass();
-  if(month===11){addSnow(24);addSparkles(8)}
+const fx=$("#skyFx");
+fx.replaceChildren();
+
+if([1,2,3,5,6,7,8].includes(month))addClouds(month===2?2:3);
+if(month===0){addSnow(22);addSparkles(5);}
+if(month===1)addSnow(10);
+if(month===4)addPetals(15);
+if(month===8)addLeaves(5,true);
+if(month===9){addLeaves(16);addBirdFlock();}
+if(month===10)addNovemberGlass();
+if(month===11){addSnow(24);addSparkles(8);}
 }
 
 function renderCalendar(){
-let [name,short,y,m]=MONTHS[activeMonth];
-$("#monthName").textContent=name;$("#monthYear").textContent=y;
-$("#prevMonth").disabled=activeMonth===0;$("#nextMonth").disabled=activeMonth===MONTHS.length-1;
-let root=$("#calendarDays");root.replaceChildren();
-let first=(new Date(y,m,1).getDay()+6)%7,count=new Date(y,m+1,0).getDate();
+let [name,short,year,month]=MONTHS[activeMonth];
+
+$("#monthName").textContent=name;
+$("#monthYear").textContent=year;
+$("#prevMonth").disabled=activeMonth===0;
+$("#nextMonth").disabled=activeMonth===MONTHS.length-1;
+
+let root=$("#calendarDays");
+root.replaceChildren();
+
+let first=(new Date(year,month,1).getDay()+6)%7;
+let count=new Date(year,month+1,0).getDate();
+
 for(let i=0;i<first;i++)root.append(node("span"));
-for(let d=1;d<=count;d++){
-let key=dateKey(y,m,d),events=data.events.filter(e=>e.date===key);
-let button=node("button","date"+(d===selectedDay?" selected":"")+(((first+d-1)%7)>4?" weekend":""),String(d));
-if(events.length){let dots=node("span","dots");events.slice(0,3).forEach(e=>dots.append(node("i","dot "+e.type)));button.append(dots)}
-button.onclick=()=>{selectedDay=d;renderCalendar();openDate()};root.append(button)
+
+for(let day=1;day<=count;day++){
+let key=dateKey(year,month,day);
+let events=data.events.filter(event=>event.date===key);
+let weekend=((first+day-1)%7)>4;
+
+let button=node(
+"button",
+"date"+(day===selectedDay?" selected":"")+(weekend?" weekend":""),
+String(day)
+);
+
+if(events.length){
+let dots=node("span","dots");
+
+events.slice(0,3).forEach(event=>{
+dots.append(node("i","dot "+event.type));
+});
+
+button.append(dots);
 }
-let months=$("#months");months.replaceChildren();
-MONTHS.forEach((month,index)=>{let button=node("button",index===activeMonth?"active":"",month[1]);button.onclick=()=>{activeMonth=index;selectedDay=1;renderCalendar()};months.append(button)});
-setMonthScene(m);
+
+button.onclick=()=>{
+selectedDay=day;
+renderCalendar();
+openDate();
+};
+
+root.append(button);
+}
+
+let months=$("#months");
+months.replaceChildren();
+
+MONTHS.forEach((item,index)=>{
+let button=node("button",index===activeMonth?"active":"",item[1]);
+
+button.onclick=()=>{
+activeMonth=index;
+selectedDay=1;
+renderCalendar();
+};
+
+months.append(button);
+});
+
+setMonthScene(month);
+}
+
+function buildScheduleCell(dayIndex,lessonIndex){
+let day=DAYS[dayIndex];
+let key=`${day.short}-${lessonIndex+1}`;
+let value=data.values[key]||{subject:"",comment:"",url:""};
+
+let cell=node("div",`slot c${dayIndex+1}`);
+cell.append(node("i","accent"));
+
+let view=node("div","view");
+view.append(node("strong",value.subject?"":"empty",value.subject||"—"));
+
+if(value.comment)view.append(node("small","",value.comment));
+
+let href=safeUrl(value.url);
+
+if(href){
+let link=node("a","","Відкрити матеріал ↗");
+link.href=href;
+link.target="_blank";
+link.rel="noopener noreferrer";
+view.append(link);
+}
+
+let fields=node("div","fields");
+let subject=document.createElement("input");
+let comment=document.createElement("input");
+let url=document.createElement("input");
+
+subject.className=comment.className=url.className="field";
+subject.placeholder="Назва предмета";
+comment.placeholder="Короткий коментар";
+url.placeholder="https://…";
+
+subject.value=value.subject||"";
+comment.value=value.comment||"";
+url.value=value.url||"";
+
+function update(){
+data.values[key]={
+subject:subject.value,
+comment:comment.value,
+url:url.value
+};
+
+$("#statusText").textContent="Є незбережені зміни";
+}
+
+subject.oninput=update;
+comment.oninput=update;
+
+url.oninput=()=>{
+update();
+url.classList.toggle(
+"bad",
+Boolean(url.value.trim()&&!safeUrl(url.value))
+);
+};
+
+fields.append(subject,comment,url);
+cell.append(view,fields);
+return cell;
+}
+
+function renderMobileSchedule(){
+let root=$("#mobileSchedule");
+root.replaceChildren();
+
+let navigation=node("div","mobile-days");
+
+DAYS.forEach((day,index)=>{
+let button=node(
+"button",
+`mobile-day ${day.tone}${index===activeScheduleDay?" active":""}`,
+day.short
+);
+
+button.type="button";
+button.setAttribute("aria-label",day.name);
+button.setAttribute(
+"aria-pressed",
+index===activeScheduleDay?"true":"false"
+);
+
+button.onclick=()=>{
+activeScheduleDay=index;
+renderMobileSchedule();
+};
+
+navigation.append(button);
+});
+
+let day=DAYS[activeScheduleDay];
+let title=node("div","mobile-day-title "+day.tone);
+title.append(node("b","",day.short),node("strong","",day.name));
+
+let lessons=node("div","mobile-lessons");
+
+TIMES.forEach((time,lessonIndex)=>{
+let row=node("div","mobile-lesson");
+let timeCell=node("div","mobile-time");
+
+timeCell.append(
+node("span","num",String(lessonIndex+1)),
+node("span","time",time)
+);
+
+row.append(
+timeCell,
+buildScheduleCell(activeScheduleDay,lessonIndex)
+);
+
+lessons.append(row);
+});
+
+root.append(navigation,title,lessons);
 }
 
 function renderSchedule(){
-let grid=$("#scheduleGrid");grid.replaceChildren();
-grid.append(node("div","time-head","◷  Час"));
-DAYS.forEach(day=>{let heading=node("div","day-head "+day.tone);heading.append(node("b","",day.short),node("strong","",day.name));grid.append(heading)});
+let grid=$("#scheduleGrid");
+grid.replaceChildren();
+
+grid.append(node("div","time-head","◷ Час"));
+
+DAYS.forEach(day=>{
+let heading=node("div","day-head "+day.tone);
+heading.append(
+node("b","",day.short),
+node("strong","",day.name)
+);
+grid.append(heading);
+});
+
 TIMES.forEach((time,lessonIndex)=>{
-let timeCell=node("div","time-cell");timeCell.append(node("span","num",String(lessonIndex+1)),node("span","time",time));grid.append(timeCell);
+let timeCell=node("div","time-cell");
+
+timeCell.append(
+node("span","num",String(lessonIndex+1)),
+node("span","time",time)
+);
+
+grid.append(timeCell);
+
 DAYS.forEach((day,dayIndex)=>{
-let key=`${day.short}-${lessonIndex+1}`,value=data.values[key]||{subject:"",comment:"",url:""};
-let cell=node("div",`slot c${dayIndex+1}`);cell.append(node("i","accent"));
-let view=node("div","view");view.append(node("strong",value.subject?"":"empty",value.subject||"—"));
-if(value.comment)view.append(node("small","",value.comment));
-let href=safeUrl(value.url);if(href){let link=node("a","","Відкрити матеріал ↗");link.href=href;link.target="_blank";link.rel="noopener noreferrer";view.append(link)}
-let fields=node("div","fields");let subject=document.createElement("input"),comment=document.createElement("input"),url=document.createElement("input");
-subject.className=comment.className=url.className="field";subject.placeholder="Назва предмета";comment.placeholder="Короткий коментар";url.placeholder="https://…";
-subject.value=value.subject||"";comment.value=value.comment||"";url.value=value.url||"";
-function update(){data.values[key]={subject:subject.value,comment:comment.value,url:url.value};$("#statusText").textContent="Є незбережені зміни"}
-subject.oninput=update;comment.oninput=update;url.oninput=()=>{update();url.classList.toggle("bad",!!url.value.trim()&&!safeUrl(url.value))};
-fields.append(subject,comment,url);cell.append(view,fields);grid.append(cell)
-})
-})
+grid.append(buildScheduleCell(dayIndex,lessonIndex));
+});
+});
+
+renderMobileSchedule();
 }
 
 function openDate(){
-let [name,short,y,m]=MONTHS[activeMonth],key=dateKey(y,m,selectedDay),events=data.events.filter(e=>e.date===key);
-let wrap=node("div","backdrop"),dialog=node("section","dialog"),head=node("div","dialog-head"),title=node("div");
-title.append(node("small","","КАЛЕНДАРНА ДАТА"),node("h3","",`${selectedDay} ${name.toLowerCase()} ${y}`));
-let close=node("button","close","×");close.onclick=()=>$("#modal").replaceChildren();head.append(title,close);
-let list=node("div","event-list");if(!events.length)list.append(node("p","","На цю дату позначок ще немає."));
-events.forEach(event=>{let row=node("div","event");row.append(node("i","dot "+event.type));let text=node("div");text.append(node("small","",TYPES[event.type]),node("strong","",event.title));row.append(text);if(event.url&&safeUrl(event.url)){let link=node("a","","↗");link.href=safeUrl(event.url);link.target="_blank";link.rel="noopener noreferrer";row.append(link)}if(editing){let remove=node("button","remove","×");remove.onclick=()=>{data.events=data.events.filter(item=>item.id!==event.id);renderCalendar();openDate()};row.append(remove)}list.append(row)});
-let form=node("form","event-form");let typeLabel=node("label","","Тип позначки"),select=document.createElement("select");Object.entries(TYPES).forEach(([value,text])=>{let option=document.createElement("option");option.value=value;option.textContent=text;select.append(option)});typeLabel.append(select);
-let titleLabel=node("label","","Короткий запис"),input=document.createElement("input");input.placeholder="Наприклад: День народження Марка";titleLabel.append(input);
-let linkLabel=node("label","","Посилання (необов’язково)"),url=document.createElement("input");url.placeholder="https://…";linkLabel.append(url);
-let add=node("button","","Додати позначку");form.append(typeLabel,titleLabel,linkLabel,add);
-form.onsubmit=event=>{event.preventDefault();if(!input.value.trim())return;if(url.value.trim()&&!safeUrl(url.value)){url.classList.add("bad");return}data.events.push({id:Date.now()+"-"+Math.random().toString(36).slice(2),date:key,type:select.value,title:input.value.trim(),url:safeUrl(url.value)});renderCalendar();openDate();$("#statusText").textContent="Є незбережені зміни"};
-dialog.append(head,list,form);wrap.append(dialog);wrap.onmousedown=event=>{if(event.target===wrap)$("#modal").replaceChildren()};$("#modal").replaceChildren(wrap)
+let [name,short,year,month]=MONTHS[activeMonth];
+let key=dateKey(year,month,selectedDay);
+let events=data.events.filter(event=>event.date===key);
+
+let wrap=node("div","backdrop");
+let dialog=node("section","dialog");
+let head=node("div","dialog-head");
+let title=node("div");
+
+title.append(
+node("small","","КАЛЕНДАРНА ДАТА"),
+node("h3","",`${selectedDay} ${name.toLowerCase()} ${year}`)
+);
+
+let close=node("button","close","×");
+close.onclick=()=>$("#modal").replaceChildren();
+head.append(title,close);
+
+let list=node("div","event-list");
+
+if(!events.length){
+list.append(node("p","","На цю дату позначок ще немає."));
+}
+
+events.forEach(event=>{
+let row=node("div","event");
+row.append(node("i","dot "+event.type));
+
+let text=node("div");
+text.append(
+node("small","",TYPES[event.type]),
+node("strong","",event.title)
+);
+
+row.append(text);
+
+if(event.url&&safeUrl(event.url)){
+let link=node("a","","↗");
+link.href=safeUrl(event.url);
+link.target="_blank";
+link.rel="noopener noreferrer";
+row.append(link);
+}
+
+if(editing){
+let remove=node("button","remove","×");
+
+remove.onclick=()=>{
+data.events=data.events.filter(item=>item.id!==event.id);
+renderCalendar();
+openDate();
+};
+
+row.append(remove);
+}
+
+list.append(row);
+});
+
+let form=node("form","event-form");
+
+let typeLabel=node("label","","Тип позначки");
+let select=document.createElement("select");
+
+Object.entries(TYPES).forEach(([value,text])=>{
+let option=document.createElement("option");
+option.value=value;
+option.textContent=text;
+select.append(option);
+});
+
+typeLabel.append(select);
+
+let titleLabel=node("label","","Короткий запис");
+let input=document.createElement("input");
+input.placeholder="Наприклад: День народження Марка";
+titleLabel.append(input);
+
+let linkLabel=node("label","","Посилання (необов’язково)");
+let url=document.createElement("input");
+url.placeholder="https://…";
+linkLabel.append(url);
+
+let add=node("button","","Додати позначку");
+form.append(typeLabel,titleLabel,linkLabel,add);
+
+form.onsubmit=event=>{
+event.preventDefault();
+
+if(!input.value.trim())return;
+
+if(url.value.trim()&&!safeUrl(url.value)){
+url.classList.add("bad");
+return;
+}
+
+data.events.push({
+id:Date.now()+"-"+Math.random().toString(36).slice(2),
+date:key,
+type:select.value,
+title:input.value.trim(),
+url:safeUrl(url.value)
+});
+
+renderCalendar();
+openDate();
+$("#statusText").textContent="Є незбережені зміни";
+};
+
+dialog.append(head,list,form);
+wrap.append(dialog);
+
+wrap.onmousedown=event=>{
+if(event.target===wrap)$("#modal").replaceChildren();
+};
+
+$("#modal").replaceChildren(wrap);
 }
 
 function toggle(){
-editing=!editing;$("#app").classList.toggle("editing",editing);document.body.classList.toggle("editing",editing);
-$("#editBtn").textContent=editing?"✕ Завершити редагування":"✏️ Редагувати";
-$("#saveBtn").hidden=$("#exportBtn").hidden=!editing;$("#modeLabel").textContent=editing?"Режим учителя":"Лише перегляд";
-if(!editing){renderSchedule();$("#modal").replaceChildren()}
+editing=!editing;
+
+$("#app").classList.toggle("editing",editing);
+document.body.classList.toggle("editing",editing);
+
+$("#editBtn").textContent=editing
+?"✕ Завершити редагування"
+:"✏️ Редагувати";
+
+$("#saveBtn").hidden=
+$("#exportBtn").hidden=
+!editing;
+
+$("#modeLabel").textContent=editing
+?"Режим учителя"
+:"Лише перегляд";
+
+if(!editing){
+renderSchedule();
+$("#modal").replaceChildren();
 }
-function toast(text){let box=$("#toast");box.textContent=text;box.classList.add("show");clearTimeout(toast.timer);toast.timer=setTimeout(()=>box.classList.remove("show"),3000)}
+}
+
+function toast(text){
+let box=$("#toast");
+box.textContent=text;
+box.classList.add("show");
+
+clearTimeout(toast.timer);
+
+toast.timer=setTimeout(()=>{
+box.classList.remove("show");
+},3000);
+}
+
 function save(){
-let invalid=Object.values(data.values).some(value=>value.url&&value.url.trim()&&!safeUrl(value.url));
-if(invalid){toast("Перевірте посилання: дозволено лише https://");return false}
-localStorage.setItem(KEY,JSON.stringify(data));$("#statusText").textContent="Чернетку збережено на цьому комп’ютері";toast("Чернетку збережено");return true
+let invalid=Object.values(data.values).some(value=>
+value.url&&value.url.trim()&&!safeUrl(value.url)
+);
+
+if(invalid){
+toast("Перевірте посилання: дозволено лише https://");
+return false;
 }
+
+localStorage.setItem(KEY,JSON.stringify(data));
+$("#statusText").textContent="Чернетку збережено на цьому комп’ютері";
+toast("Чернетку збережено");
+return true;
+}
+
 function exportFile(){
 if(!save())return;
-let clone=document.documentElement.cloneNode(true);clone.querySelector("#app").classList.remove("editing");clone.querySelector("#saveBtn").hidden=clone.querySelector("#exportBtn").hidden=true;clone.querySelector("#editBtn").textContent="✏️ Редагувати";clone.querySelector("#modeLabel").textContent="Лише перегляд";clone.querySelector("#modal").replaceChildren();
-let html="<!doctype html>\n"+clone.outerHTML,json=JSON.stringify(data).replace(/</g,"\\u003c");html=html.replace(/\/\*__DATA_START__\*\/[\s\S]*?\/\*__DATA_END__\*\//,`/*__DATA_START__*/${json}/*__DATA_END__*/`);
-let blob=new Blob([html],{type:"text/html;charset=utf-8"}),link=document.createElement("a");link.href=URL.createObjectURL(blob);link.download="index.html";link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1500);toast("Оновлений index.html підготовлено")
+
+let clone=document.documentElement.cloneNode(true);
+
+clone.querySelector("#app").classList.remove("editing");
+clone.querySelector("body").classList.remove("editing");
+clone.querySelector("#saveBtn").hidden=true;
+clone.querySelector("#exportBtn").hidden=true;
+clone.querySelector("#editBtn").textContent="✏️ Редагувати";
+clone.querySelector("#modeLabel").textContent="Лише перегляд";
+clone.querySelector("#statusText").textContent="Актуальний розклад 3 класу";
+clone.querySelector("#modal").replaceChildren();
+
+let cloneToast=clone.querySelector("#toast");
+cloneToast.classList.remove("show");
+cloneToast.textContent="";
+
+let html="<!doctype html>\n"+clone.outerHTML;
+let json=JSON.stringify(data).replace(/</g,"\\u003c");
+
+html=html.replace(
+/\/\*__DATA_START__\*\/[\s\S]*?\/\*__DATA_END__\*\//,
+`/*__DATA_START__*/${json}/*__DATA_END__*/`
+);
+
+let blob=new Blob([html],{type:"text/html;charset=utf-8"});
+let link=document.createElement("a");
+
+link.href=URL.createObjectURL(blob);
+link.download="index.html";
+link.click();
+
+setTimeout(()=>URL.revokeObjectURL(link.href),1500);
+toast("Оновлений index.html підготовлено");
 }
 
-$("#prevMonth").onclick=()=>{if(activeMonth){activeMonth--;selectedDay=1;renderCalendar()}};
-$("#nextMonth").onclick=()=>{if(activeMonth<MONTHS.length-1){activeMonth++;selectedDay=1;renderCalendar()}};
-$("#editBtn").onclick=toggle;$("#saveBtn").onclick=save;$("#exportBtn").onclick=exportFile;
-$("#copyBtn").onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast("Адресу скопійовано")}catch{toast("Скопіюйте адресу з рядка браузера")}};
+$("#prevMonth").onclick=()=>{
+if(activeMonth){
+activeMonth--;
+selectedDay=1;
+renderCalendar();
+}
+};
 
-/* Перший фон ставимо одразу, без спалаху темного тла */
-const initialMonth=MONTHS[activeMonth][3],initialScene=SCENES[initialMonth];
-$("#sceneA").style.backgroundImage=`url("${initialScene[0]}")`;$("#sceneA").style.backgroundPosition=initialScene[1];
-lastSceneMonth=initialMonth;renderMonthFx(initialMonth);
-renderCalendar();renderSchedule();
+$("#nextMonth").onclick=()=>{
+if(activeMonth<MONTHS.length-1){
+activeMonth++;
+selectedDay=1;
+renderCalendar();
+}
+};
+
+$("#editBtn").onclick=toggle;
+$("#saveBtn").onclick=save;
+$("#exportBtn").onclick=exportFile;
+
+$("#copyBtn").onclick=async()=>{
+try{
+await navigator.clipboard.writeText(location.href);
+toast("Адресу скопійовано");
+}catch{
+toast("Скопіюйте адресу з рядка браузера");
+}
+};
+
+const initialMonth=MONTHS[activeMonth][3];
+const initialScene=SCENES[initialMonth];
+
+$("#sceneA").style.backgroundImage=`url("${initialScene[0]}")`;
+$("#sceneA").style.backgroundPosition=initialScene[1];
+
+lastSceneMonth=initialMonth;
+renderMonthFx(initialMonth);
+renderCalendar();
+renderSchedule();
 </script>
 </body>
 </html>
