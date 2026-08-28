@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="uk">
-<head>
+<html lang="uk"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#061a3b">
@@ -1093,7 +1092,7 @@ animation:none!important
 </style>
 </head>
 
-<body>
+<body class="">
 <main class="page">
 <div class="shell" id="app">
 
@@ -1129,7 +1128,7 @@ animation:none!important
 
 <aside class="calendar">
 <div class="cal-top">
-<button class="arrow" id="prevMonth">‹</button>
+<button class="arrow" id="prevMonth" disabled="">‹</button>
 <div>
 <strong id="monthName"></strong>
 <small id="monthYear"></small>
@@ -1156,8 +1155,8 @@ animation:none!important
 <div class="toolbar">
 <h3>Тижневий розклад</h3>
 <button class="btn" id="editBtn">✏️ Редагувати</button>
-<button class="btn blue" id="saveBtn" hidden>💾 Зберегти чернетку</button>
-<button class="btn gold" id="exportBtn" hidden>⬇ Підготувати для GitHub</button>
+<button class="btn blue" id="saveBtn" hidden="">💾 Зберегти чернетку</button>
+<button class="btn gold" id="exportBtn" hidden="">⬇ Підготувати для GitHub</button>
 
 <div class="edit-note">
 <b>Режим учителя.</b> Заповнюйте уроки, примітки, HTTPS-посилання та важливі дати.
@@ -1186,49 +1185,7 @@ animation:none!important
 <div class="toast" id="toast"></div>
 
 <script>
-const INITIAL_DATA=/*__DATA_START__*/{
-"values":{
-"Пн-1":{"subject":"Англійська","comment":"Прищепюк Т. Ю.","url":""},
-"Вт-1":{"subject":"Інформатика","comment":"Чистякова А. В.","url":""},
-"Ср-1":{"subject":"Англійська","comment":"Прищепюк Т. Ю.","url":""},
-"Чт-1":{"subject":"Літературне читання","comment":"Товстуха Н. С.","url":""},
-"Пт-1":{"subject":"Англійська","comment":"Прищепюк Т. Ю.","url":""},
-
-"Пн-2":{"subject":"Літер. читання","comment":"Товстуха Н. С.","url":""},
-"Вт-2":{"subject":"Літер. читання","comment":"Товстуха Н. С.","url":""},
-"Ср-2":{"subject":"ЯДС","comment":"Товстуха Н. С.","url":""},
-"Чт-2":{"subject":"українська мова","comment":"Товстуха Н. С.","url":""},
-"Пт-2":{"subject":"фізкультура","comment":"Лондарева А. М.","url":""},
-
-"Пн-3":{"subject":"українська мова","comment":"Товстуха Н. С.","url":""},
-"Вт-3":{"subject":"укр. мова","comment":"Товстуха Н. С.","url":""},
-"Ср-3":{"subject":"математика","comment":"Товстуха Н. С.","url":""},
-"Чт-3":{"subject":"математика","comment":"Товстуха Н. С.","url":""},
-"Пт-3":{"subject":"математика","comment":"Товстуха Н. С.","url":""},
-
-"Пн-4":{"subject":"математика","comment":"Товстуха Н. С.","url":""},
-"Вт-4":{"subject":"математика","comment":"Товстуха Н. С.","url":""},
-"Ср-4":{"subject":"мистецтво","comment":"Товстуха Н. С.","url":""},
-"Чт-4":{"subject":"ЯДС","comment":"Товстуха Н. С.","url":""},
-"Пт-4":{"subject":"українська мова/ літер.чит.","comment":"Товстуха Н. С.","url":""},
-
-"Пн-5":{"subject":"фізкультура","comment":"Лондарева А. М.","url":""},
-"Вт-5":{"subject":"дизайн і технології","comment":"Товстуха Н. С.","url":""},
-"Ср-5":{"subject":"фізкультура","comment":"Лондарева А. М.","url":""},
-"Чт-5":{"subject":"мистецтво","comment":"Товстуха Н. С.","url":""},
-"Пт-5":{"subject":"ЯДС","comment":"Товстуха Н. С.","url":""}
-},
-"events":[
-{"id":"birthday-1","date":"2026-09-28","type":"birthday","title":"Кулик Матвій","url":""},
-{"id":"birthday-2","date":"2026-12-30","type":"birthday","title":"Чистяков Олексій","url":""},
-{"id":"birthday-3","date":"2027-04-11","type":"birthday","title":"Росподнюк Даніл","url":""},
-{"id":"birthday-4","date":"2027-05-02","type":"birthday","title":"Бондаренко Самуіл","url":""},
-{"id":"birthday-5","date":"2027-05-18","type":"birthday","title":"Тимошенко Артем","url":""},
-{"id":"birthday-6","date":"2027-05-19","type":"birthday","title":"Кулішова Мілана","url":""},
-{"id":"birthday-7","date":"2027-08-12","type":"birthday","title":"Давиденко Ганна","url":""},
-{"id":"birthday-8","date":"2027-08-30","type":"birthday","title":"Гноєвий Тимофій","url":""}
-]
-}/*__DATA_END__*/;
+const INITIAL_DATA=/*__DATA_START__*/{"values":{"Пн-1":{"subject":"Англійська","comment":"Прищепюк Т. Ю. ","url":""},"Вт-1":{"subject":"Інформатика","comment":"Чистякова А. В.","url":""},"Ср-1":{"subject":"Англійська","comment":"Прищепюк Т. Ю.","url":""},"Пт-1":{"subject":"Англійська","comment":"Прищепюк Т. Ю.","url":""},"Пт-5":{"subject":"мистецтво","comment":"Товстуха Н.С.","url":""},"Чт-1":{"subject":"Літературне читання","comment":"Товстуха Н.С.","url":""},"Пн-5":{"subject":"фізкультура","comment":"Лондарева А. М. ","url":""},"Ср-5":{"subject":"фізкультура","comment":"Лондарева А. М.","url":""},"Чт-2":{"subject":"українська мова","comment":"Товстуха Н.С.","url":""},"Чт-3":{"subject":"математика","comment":"Товстуха Н. С.","url":""},"Пт-2":{"subject":"фізкультура","comment":"Лондарева А.М.","url":""},"Пт-3":{"subject":"математика","comment":"Товстуха Н.С.","url":""},"Пт-4":{"subject":"літер.чит/ мова","comment":"Товстуха Н.С.","url":""},"Пн-2":{"subject":"ЯДС","comment":"Товстуха Н. С.","url":""},"Пн-3":{"subject":"українська мова","comment":"Товстуха Н. С.","url":""},"Пн-4":{"subject":"математика","comment":"Товстуха Н. С.","url":""},"Вт-2":{"subject":"Літер. читання","comment":"Товстуха Н. С.","url":""},"Вт-3":{"subject":"укр. мова","comment":"Товстуха Н. С.","url":""},"Вт-4":{"subject":"математика","comment":"Товстуха Н. С.","url":""},"Вт-5":{"subject":"мистецтво","comment":"Товстуха Н. С.","url":""},"Ср-2":{"subject":"математика","comment":"Товстуха Н. С.","url":""},"Ср-3":{"subject":"літературне читання","comment":"Товстуха Н. С.","url":""},"Ср-4":{"subject":"ЯДС","comment":"Товстуха Н. С.","url":""},"Чт-4":{"subject":"ЯДС","comment":"Товстуха Н. С.","url":""},"Чт-5":{"subject":"Дизайн і технології","comment":"Товстуха Н. С.","url":""}},"events":[{"id":"1787818430134-42pdtg9340n","date":"2026-09-28","type":"birthday","title":"Кулик Матвій","url":""},{"id":"1787818474234-omh1l0wc1fa","date":"2026-12-30","type":"birthday","title":"Чистяков Олексій","url":""},{"id":"1787818506638-g2ktojtcqr","date":"2027-04-11","type":"birthday","title":"Росподнюк Даніл","url":""},{"id":"1787818531519-rjyqlk7k508","date":"2027-05-02","type":"birthday","title":"Бондаренко Самуіл","url":""},{"id":"1787818612945-ldtyck0a8r","date":"2027-05-18","type":"birthday","title":"Тимошенко Артем","url":""},{"id":"1787818630131-r1nr0f1yzjb","date":"2027-05-19","type":"birthday","title":"Кулішова Мілана","url":""},{"id":"1787818653750-c6zm6dx11k","date":"2027-08-12","type":"birthday","title":"Давиденко Ганна","url":""},{"id":"1787818673487-ijsw9gfkmpo","date":"2027-08-30","type":"birthday","title":"Гноєвий  Тимофій","url":""}]}/*__DATA_END__*/;
 
 const DAYS=[
 {name:"Понеділок",short:"Пн",tone:"cyan"},
@@ -2077,5 +2034,6 @@ renderMonthFx(initialMonth);
 renderCalendar();
 renderSchedule();
 </script>
-</body>
-</html>
+
+
+</body></html>
